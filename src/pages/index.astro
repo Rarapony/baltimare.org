@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MainComponent from "../components/MainComponent.vue";
+---
+<Layout title="Baltimare | Main">
+  <MainComponent client:load />
+</Layout>
+
+<style>
+	.glow {
+		-webkit-box-shadow: 0px 0px 105px 45px rgba(45, 255, 196, 0.9);
+		-moz-box-shadow: 0px 0px 105px 45px rgba(45, 255, 196, 0.9);
+		box-shadow: 0px 0px 105px 45px rgba(45, 255, 196, 0.9);
+	}
+	</style>
+	

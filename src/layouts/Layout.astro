@@ -1,0 +1,107 @@
+---
+import Navbar from "../components/Navbar.astro";
+import { ViewTransitions } from "astro:transitions";
+const { title } = Astro.props;
+
+const images = {
+  "/": "Snapshot_008.png",
+  "/about": "opg356.png",
+  "/faq": "opg246_Large.png",
+  "/credits": "opg296.png",
+  "/rules": "opg232.png",
+};
+
+const { pathname } = Astro.url;
+
+const backgrounds = ["squarestones.png", "grass.png", "sidewalk.png"];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <ViewTransitions />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Single Day:wght@300;400;500;600;700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="/src/assets/opg232.png" />
+    <link rel="preload" as="image" href="/src/assets/opg356.png" />
+    <link rel="preload" as="image" href="/src/assets/opg296.png" />
+    <link rel="preload" as="image" href="/src/assets/opg246_Large.png" />
+    <link rel="preload" as="image" href="/src/assets/mapcropped.png" />
+    <link rel="preload" as="image" href="/src/assets/Snapshot_008.png" />
+  </head>
+  <body>
+    <div
+      class="overflow-hidden w-full min-h-screen flex items-center justify-center bg-black bg-contain"
+      style={`background-image: url('/src/assets/textures/${backgrounds[0]}')`}
+    >
+      <div
+        style={`filter: drop-shadow(0 10px 10px #000); background-image: url('/src/assets/${images[pathname] ?? "Snapshot_008.png"}')`}
+        class="bg-white -rotate-1 flex flex-col items-center justify-center border-[16px] border-amber-50 rounded-lg w-320 h-224 bg-cover"
+      >
+        <slot />
+        <Navbar />
+      </div>
+    </div>
+  </body><style is:global>
+    .glass {
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .text-shadow {
+      text-shadow: 1px 1px 1px black;
+    }
+    
+	
+	dialog {
+		font-family: Poppins, Arial, sans-serif;
+		@apply rounded-xl;
+		filter: drop-shadow(0 50px 50px #000);
+		outline: none;
+	}
+	
+	dialog[open] {
+		animation: fade 0.3s ease-in-out normal;
+	}
+	
+	dialog::backdrop {
+		background-image: linear-gradient(45deg, #000, #000);
+		opacity: 0.5;
+	}
+	
+	dialog:focus {
+		outline: none;
+	}
+	
+	@keyframes fade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+  </style>
+</html>
