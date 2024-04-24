@@ -27,6 +27,20 @@ const backgroundImageUrl = (await getImage({
   width: 1080,
 })).src;
 
+const backgroundImageUrl2 = (await getImage({
+  src: bgImage2,
+  format: "webp",
+  width: 1080,
+})).src;
+
+const backgroundImageUrl3 = (await getImage({
+  src: bgImage3,
+  format: "webp",
+  width: 1080,
+})).src;
+
+const bgs = [backgroundImageUrl, backgroundImageUrl2, backgroundImageUrl3][~~(Math.random() * 3)];
+
 const card1Url = (await getImage({
   src: card1,
   format: "webp",
@@ -108,7 +122,7 @@ const images = {
   <body>
     <div
       class="overflow-hidden w-full min-h-screen flex items-center justify-center bg-black bg-contain"
-      style={`background-image: url('${backgroundImageUrl}')`}
+      style={`background-image: url('${bgs}')`}
     >
       <div
         style={`filter: drop-shadow(0 10px 10px #000); background-image: url('${images[pathname]}')`}

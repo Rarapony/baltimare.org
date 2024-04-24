@@ -9,5 +9,6 @@ export default defineConfig({
   prefetch: {
     prefetchAll: true
   },
-  integrations: [tailwind(), vue(), icon()]
+  integrations: [tailwind(), vue(), icon()],
+  output: "server"
 });
