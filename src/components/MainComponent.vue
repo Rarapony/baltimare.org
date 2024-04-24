@@ -144,7 +144,6 @@ const teleportToUser = (user) => {
           "
           @mouseover="magnify(user)"
           @mouseout="demagnify(user)"
-          @click="teleportToUser(user)"
           :id="user.UUID"
           :key="user.UUID"
         >
@@ -337,7 +336,6 @@ const teleportToUser = (user) => {
           )"
           @mouseover="magnify(user)"
           @mouseout="demagnify(user)"
-          @click="teleportToUser(user)"
           class="hidden lg:block w-full"
         >
           <div
