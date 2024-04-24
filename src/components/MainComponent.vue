@@ -64,7 +64,7 @@ const teleportToUser = (user) => {
     >
       <div class="text-blue-300 text-6xl uppercase font-semibold tracking-wide">
         <img
-          src="/src/assets/baltimare.png"
+          src="src/assets/baltimare.png"
           style="filter: drop-shadow(0 4px 4px #000)"
           width="700"
         />
@@ -73,7 +73,7 @@ const teleportToUser = (user) => {
         class="-mt-32 text-blue-300 text-6xl uppercase font-semibold tracking-wide"
       >
         <img
-          src="/src/assets/opg.png"
+          src="src/assets/opg.png"
           style="filter: drop-shadow(0 4px 4px #000)"
           width="300"
         />
@@ -81,7 +81,7 @@ const teleportToUser = (user) => {
     </a>
     <div class="w-4/5 relative flex rounded-lg mt-4">
       <img
-        src="/src/assets/mapcropped.png"
+        src="src/assets/mapcropped.png"
         class="w-full rounded-lg"
         usemap="#image-map"
         id="map"
@@ -112,7 +112,7 @@ const teleportToUser = (user) => {
               .replace(' Resident', '')
               .replace(' ', '.')
               .toLowerCase()}/thumb_sl_image.png`"
-            onerror="this.src='/src/assets/twi.png'"
+            onerror="this.src='src/assets/twi.png'"
             class="cursor-pointer glow bg-white w-6 h-6 rounded-full border border-white shadow-2xl z-50 duration-[1500ms]"
             :style="{
               left:
@@ -168,8 +168,8 @@ const teleportToUser = (user) => {
             <img
               :src="
                 parcel.img
-                  ? `/src/assets/${parcel.img}`
-                  : '/src/assets/Feast_Hall_Preparations.png'
+                  ? `src/assets/${parcel.img}`
+                  : 'src/assets/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
@@ -226,7 +226,7 @@ const teleportToUser = (user) => {
                 <img
                   :src="user.pfp"
                   class="w-4 h-4 rounded"
-                  onerror="this.src='/src/assets/twi.png'"
+                  onerror="this.src='src/assets/twi.png'"
                 />
                 <span class="text-sm">{{ user.display_name }}</span>
               </div>
@@ -266,7 +266,7 @@ const teleportToUser = (user) => {
             <img
               :src="user.pfp"
               class="w-4 h-4 rounded"
-              onerror="this.src='/src/assets/twi.png'"
+              onerror="this.src='src/assets/twi.png'"
             />
             <span class="text-sm font-medium">
               {{ user.display_name.replace(" Resident", "") }}
@@ -275,7 +275,7 @@ const teleportToUser = (user) => {
         </div>
       </div>
       <div v-else class="min-h-80 flex flex-col items-center justify-center text-center">
-        <img src="/src/assets/twi.gif" />
+        <img src="src/assets/twi.gif" />
         <div class="text-center mt-1 text-lg">Loading users...</div>
       </div>
     </div>
