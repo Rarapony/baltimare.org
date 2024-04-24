@@ -1,14 +1,41 @@
 <script setup>
 import { computed, onMounted, ref, watchEffect } from "vue";
 import { useStore } from "@nanostores/vue";
-import { users, updateData, avatarPos, avatarPosObj } from "../stores/store.js";
+import {
+  updateData,
+  avatarPosBaltimare,
+  avatarPosHorseHeights,
+  avatarPosObjBaltimare,
+  avatarPosObjHorseHeights,
+} from "../stores/store.js";
 import parcels from "../data/parcels.js";
+
+import { Tippy } from "vue-tippy";
+import "tippy.js/dist/tippy.css";
 
 import axios from "axios";
 
-const $users = useStore(users);
-const $avatarPos = useStore(avatarPos);
-const $avatarPosObj = useStore(avatarPosObj);
+const $avatarPosBaltimare = useStore(avatarPosBaltimare);
+const $avatarPosHorseHeights = useStore(avatarPosHorseHeights);
+const $avatarPosObjBaltimare = useStore(avatarPosObjBaltimare);
+const $avatarPosObjHorseHeights = useStore(avatarPosObjHorseHeights);
+
+const $avatarPos = computed(() => {
+  const baltimare = $avatarPosBaltimare.value.map((x) => ({
+    ...x,
+    location: "Baltimare",
+  }));
+  const horseHeights = $avatarPosHorseHeights.value.map((x) => ({
+    ...x,
+    location: "Horse Heights",
+  }));
+  return baltimare.concat(horseHeights);
+});
+
+const $avatarPosObj = computed(() => ({
+  ...$avatarPosObjBaltimare.value,
+  ...$avatarPosObjHorseHeights.value,
+}));
 
 updateData();
 
@@ -45,9 +72,11 @@ const openDialog = (name) => {
 };
 
 const teleportToUser = (user) => {
-  const URL = `secondlife://BALTIMARE/${user.user_position[0] || 0}/${
-    user.user_position[1] || 0
-  }/${user.user_position[2] || 0}`;
+  const URL = `secondlife://${
+    user.location === "Baltimare" ? "BALTIMARE" : "HORSE HEIGHTS"
+  }/${user.user_position[0] || 0}/${user.user_position[1] || 0}/${
+    user.user_position[2] || 0
+  }`;
   window.location.href = URL;
 };
 </script>
@@ -64,7 +93,7 @@ const teleportToUser = (user) => {
     >
       <div class="text-blue-300 text-6xl uppercase font-semibold tracking-wide">
         <img
-          src="src/assets/baltimare.png"
+          src="../assets/baltimare.png?url"
           style="filter: drop-shadow(0 4px 4px #000)"
           width="700"
         />
@@ -73,7 +102,7 @@ const teleportToUser = (user) => {
         class="-mt-32 text-blue-300 text-6xl uppercase font-semibold tracking-wide"
       >
         <img
-          src="src/assets/opg.png"
+          src="../assets/opg.png?url"
           style="filter: drop-shadow(0 4px 4px #000)"
           width="300"
         />
@@ -81,7 +110,7 @@ const teleportToUser = (user) => {
     </a>
     <div class="w-4/5 relative flex rounded-lg mt-4">
       <img
-        src="src/assets/mapcropped.png"
+        src="../assets/mapcropped2.png?url"
         class="w-full rounded-lg"
         usemap="#image-map"
         id="map"
@@ -90,52 +119,82 @@ const teleportToUser = (user) => {
         <div
           v-if="user.user_name !== 'BaltiMare Resident'"
           class="absolute flex flex-col items-center justify-center duration-[1500ms] z-50"
-          :style="{
-            left:
-              50 +
-              ($avatarPosObj?.[user.UUID]?.user_position[0] / 256) * 50 +
-              '%',
-            bottom:
-              ($avatarPosObj?.[user.UUID]?.user_position[1] / 256) * 100 + '%',
-          }"
+          :style="
+            user.location === 'Baltimare'
+              ? {
+                  left:
+                    50 +
+                    ($avatarPosObj?.[user.UUID]?.user_position[0] / 256) * 50 +
+                    '%',
+                  bottom:
+                    ($avatarPosObj?.[user.UUID]?.user_position[1] / 256) * 100 +
+                    '%',
+                }
+              : {
+                  left:
+                    ($avatarPosObj?.[user.UUID]?.user_position[0] / 256) * 50 +
+                    '%',
+                  bottom:
+                    ($avatarPosObj?.[user.UUID]?.user_position[1] / 256) * 100 +
+                    '%',
+                }
+          "
           @mouseover="magnify(user)"
           @mouseout="demagnify(user)"
           @click="teleportToUser(user)"
           :id="user.UUID"
           :key="user.UUID"
         >
-          <!-- <div class="text-xs text-center cursor-default text-black font-semibold">
+          <!-- <div class="text-xs text-center cursor-default text-neutral-800 font-semibold">
             {{ user.display_name.replace(" Resident", "") }}
           </div> -->
-          <img
-            :src="`https://my-secondlife-agni.akamaized.net/users/${user.user_name
-              .replace(' Resident', '')
-              .replace(' ', '.')
-              .toLowerCase()}/thumb_sl_image.png`"
-            onerror="this.src='src/assets/twi.png'"
-            class="cursor-pointer glow bg-white w-6 h-6 rounded-full border border-white shadow-2xl z-50 duration-[1500ms]"
-            :style="{
-              left:
-                50 +
-                ($avatarPosObj?.[user.UUID]?.user_position[0] / 256) * 50 +
-                '%',
-              bottom:
-                ($avatarPosObj?.[user.UUID]?.user_position[1] / 256) * 100 +
-                '%',
-            }"
-          />
+          <Tippy
+            :content="`<div class='text-center'><h1 class='text-base font-medium'>${user.display_name.replace(
+              ' Resident',
+              ''
+            )}</h1><h6 class='text-xs'>${user.user_name.replace(
+              ' Resident',
+              ''
+            )}</h6></div>`"
+            :allowHTML="true"
+          >
+            <img
+              :src="`https://my-secondlife-agni.akamaized.net/users/${user.user_name
+                .replace(' Resident', '')
+                .replace(' ', '.')
+                .toLowerCase()}/thumb_sl_image.png`"
+              onerror="this.src='/twi.png'"
+              class="cursor-pointer glow bg-white w-6 h-6 rounded-full border border-white shadow-2xl z-50 duration-[1500ms]"
+            />
+          </Tippy>
         </div>
       </div>
       <div
         v-for="parcel in parcels"
         :class="`cursor-pointer bg-white opacity-20 hover:opacity-75 border border-black absolute rounded duration-300`"
-        :style="`left: ${50 + (parcel.coords[0][0] * 50) / 256}%; bottom: ${
-          (parcel.coords[0][1] * 100) / 256
-        }%; width: ${
-          ((parcel.coords[3][0] - parcel.coords[0][0]) * 50) / 256
-        }%; height: ${
-          ((parcel.coords[1][1] - parcel.coords[0][1]) * 100) / 256
-        }%`"
+        :style="
+          parcel.location === 'Baltimare'
+            ? {
+                left: 50 + (parcel.coords[0][0] * 50) / 256 + '%',
+                bottom: (parcel.coords[0][1] * 100) / 256 + '%',
+                width:
+                  ((parcel.coords[3][0] - parcel.coords[0][0]) * 50) / 256 +
+                  '%',
+                height:
+                  ((parcel.coords[1][1] - parcel.coords[0][1]) * 100) / 256 +
+                  '%',
+              }
+            : {
+                left: (parcel.coords[0][0] * 50) / 256 + '%',
+                bottom: (parcel.coords[0][1] * 100) / 256 + '%',
+                width:
+                  ((parcel.coords[3][0] - parcel.coords[0][0]) * 50) / 256 +
+                  '%',
+                height:
+                  ((parcel.coords[1][1] - parcel.coords[0][1]) * 100) / 256 +
+                  '%',
+              }
+        "
         @click="openDialog(parcel.name)"
       ></div>
       <dialog
@@ -167,9 +226,7 @@ const teleportToUser = (user) => {
           <div class="flex items-center justify-center w-1/2 my-8">
             <img
               :src="
-                parcel.img
-                  ? `src/assets/${parcel.img}`
-                  : 'src/assets/Feast_Hall_Preparations.png'
+                parcel.img ? `/${parcel.img}` : '/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
@@ -205,6 +262,7 @@ const teleportToUser = (user) => {
               {{
                 $avatarPos.filter(
                   (u) =>
+                    u.location === parcel.location &&
                     u.user_position[0] >= parcel.coords[0][0] &&
                     u.user_position[0] <= parcel.coords[3][0] &&
                     u.user_position[1] >= parcel.coords[0][1] &&
@@ -226,7 +284,7 @@ const teleportToUser = (user) => {
                 <img
                   :src="user.pfp"
                   class="w-4 h-4 rounded"
-                  onerror="this.src='src/assets/twi.png'"
+                  onerror="this.src='/twi.png'"
                 />
                 <span class="text-sm">{{ user.display_name }}</span>
               </div>
@@ -242,14 +300,17 @@ const teleportToUser = (user) => {
       style="font-family: 'Poppins'; filter: drop-shadow(0 2px 2px #000)"
     >
       <div class="mb-4 text-2xl text-black font-semibold text-center">
-        <span class="font-semibold uppercase">Online:</span> <span class="font-semibold">{{
+        <span class="font-semibold uppercase">Online: </span>
+        <span class="font-semibold">{{
           $avatarPos.length ? $avatarPos.length - 1 : "?"
         }}</span>
         / 200
       </div>
       <div
-        :class="`${$avatarPos.length > 40 ? 'columns-2' : 'w-64 columns-1'}`"
         v-if="$avatarPos.length"
+        :class="`${
+          $avatarPos.length > 40 ? 'max-w-120 columns-2' : 'w-64 columns-1'
+        }`"
       >
         <div
           v-for="(user, idx) in $avatarPos.filter(
@@ -266,7 +327,7 @@ const teleportToUser = (user) => {
             <img
               :src="user.pfp"
               class="w-4 h-4 rounded"
-              onerror="this.src='src/assets/twi.png'"
+              onerror="this.src='/twi.png'"
             />
             <span class="text-sm font-medium">
               {{ user.display_name.replace(" Resident", "") }}
@@ -274,8 +335,11 @@ const teleportToUser = (user) => {
           </div>
         </div>
       </div>
-      <div v-else class="min-h-80 flex flex-col items-center justify-center text-center">
-        <img src="src/assets/twi.gif" />
+      <div
+        v-else
+        class="min-h-80 flex flex-col items-center justify-center text-center"
+      >
+        <img src="../assets/twi.gif?url" />
         <div class="text-center mt-1 text-lg">Loading users...</div>
       </div>
     </div>

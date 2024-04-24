@@ -11,7 +11,8 @@ export default [
       [48, 0],
     ],
     img: 'opg356.png',
-    teleport: [43, 41, 36]
+    teleport: [43, 41, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -25,7 +26,8 @@ export default [
       [80, 0],
     ],
     img: 'opg356.png',
-    teleport: [75, 41, 36]
+    teleport: [75, 41, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -39,7 +41,8 @@ export default [
       [104, 0],
     ],
     img: 'opg356.png',
-    teleport: [83, 41, 36]
+    teleport: [83, 41, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -53,7 +56,8 @@ export default [
       [128, 0],
     ],
     img: 'opg356.png',
-    teleport: [125, 41, 36]
+    teleport: [125, 41, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -67,7 +71,8 @@ export default [
       [160, 0],
     ],
     img: 'opg356.png',
-    teleport: [157, 41, 36]
+    teleport: [157, 41, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -81,7 +86,8 @@ export default [
       [192, 0],
     ],
     img: 'opg356.png',
-    teleport: [189, 41, 36]
+    teleport: [189, 41, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -95,7 +101,8 @@ export default [
       [224, 0],
     ],
     img: 'opg356.png',
-    teleport: [221, 41, 36]
+    teleport: [221, 41, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -109,7 +116,8 @@ export default [
       [256, 0],
     ],
     img: 'opg356.png',
-    teleport: [253, 41, 36]
+    teleport: [253, 41, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -123,7 +131,8 @@ export default [
       [32, 88],
     ],
     img: 'opg356.png',
-    teleport: [3, 54, 36]
+    teleport: [3, 54, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -137,7 +146,8 @@ export default [
       [64, 56],
     ],
     img: 'opg356.png',
-    teleport: [35, 54, 36]
+    teleport: [35, 54, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -151,7 +161,8 @@ export default [
       [96, 56],
     ],
     img: 'opg356.png',
-    teleport: [67, 54, 36]
+    teleport: [67, 54, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -165,7 +176,8 @@ export default [
       [136, 56],
     ],
     img: 'opg356.png',
-    teleport: [115, 54, 36]
+    teleport: [115, 54, 36],
+    location: 'Baltimare',
   },
   {
     type: "parcel",
@@ -179,7 +191,8 @@ export default [
       [160, 56],
     ],
     img: 'opg356.png',
-    teleport: [139, 54, 36]
+    teleport: [139, 54, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -194,7 +207,8 @@ export default [
       [192, 56],
     ],
     img: 'opg356.png',
-    teleport: [163, 54, 36]
+    teleport: [163, 54, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -209,7 +223,8 @@ export default [
       [224, 56],
     ],
     img: 'opg356.png',
-    teleport: [195, 54, 36]
+    teleport: [195, 54, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -224,7 +239,8 @@ export default [
       [240, 56],
     ],
     img: 'opg356.png',
-    teleport: [227, 54, 36]
+    teleport: [227, 54, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -239,7 +255,8 @@ export default [
       [256, 56],
     ],
     img: 'opg356.png',
-    teleport: [243, 54, 36]
+    teleport: [243, 54, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -254,7 +271,8 @@ export default [
       [32, 116],
     ],
     img: 'opg356.png',
-    teleport: [33, 117, 36]
+    teleport: [33, 117, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -269,7 +287,8 @@ export default [
       [16, 136],
     ],
     img: 'opg356.png',
-    teleport: [13, 153, 36]
+    teleport: [13, 153, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -284,7 +303,8 @@ export default [
       [32, 136],
     ],
     img: 'opg356.png',
-    teleport: [30, 153, 36]
+    teleport: [30, 153, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -299,7 +319,8 @@ export default [
       [16, 156],
     ],
     img: 'opg356.png',
-    teleport: [1, 153, 36]
+    teleport: [1, 153, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -314,7 +335,8 @@ export default [
       [32, 156],
     ],
     img: 'opg356.png',
-    teleport: [18, 154, 36]
+    teleport: [18, 154, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -329,7 +351,8 @@ export default [
       [32, 192],
     ],
     img: 'opg356.png',
-    teleport: [33, 194, 36]
+    teleport: [33, 194, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -344,7 +367,8 @@ export default [
       [32, 224],
     ],
     img: 'opg356.png',
-    teleport: [33, 225, 36]
+    teleport: [33, 225, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -359,20 +383,8 @@ export default [
       [32, 240],
     ],
     img: 'opg356.png',
-    teleport: [33, 241, 36]
-  },
-  {
-    parcelID: "",
-    type: "parcel",
-    name: "?",
-    owner: "?",
-    rent: 0,
-    coords: [
-      [168, 248],
-      [168, 256],
-      [184, 256],
-      [184, 248],
-    ],
+    teleport: [33, 241, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -387,7 +399,8 @@ export default [
       [68, 176],
     ],
     img: 'opg324.png',
-    teleport: [57, 188, 36]
+    teleport: [57, 188, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -402,7 +415,8 @@ export default [
       [256, 175],
     ],
     img: "opg232.png",
-    teleport: [192, 216, 36]
+    teleport: [192, 216, 36],
+    location: 'Baltimare',
   },
   {
     parcelID: "",
@@ -417,6 +431,167 @@ export default [
       [130, 150],
     ],
     img: 'opg356.png',
-    teleport: [82, 180, 36]
-  }
+    teleport: [82, 180, 36],
+    location: 'Baltimare',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "harmonymickain's House",
+    owner: "harmonymickain",
+    rent: 467,
+    coords: [
+      [0, 0],
+      [0, 64],
+      [64, 64],
+      [64, 0],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "FenrisEbonyglow's House",
+    owner: "FenrisEbonyglow",
+    rent: 1495,
+    coords: [
+      [0, 68],
+      [0, 132],
+      [64, 132],
+      [64, 68],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "backspace119's House",
+    owner: "backspace119",
+    rent: 467,
+    coords: [
+      [0, 136],
+      [0, 176],
+      [32, 176],
+      [32, 136],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "15's House",
+    owner: "15",
+    rent: 467,
+    coords: [
+      [0, 176],
+      [0, 216],
+      [32, 216],
+      [32, 176],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "Whitetail1473's House",
+    owner: "Whitetail1473",
+    rent: 467,
+    coords: [
+      [0, 216],
+      [0, 256],
+      [32, 256],
+      [32, 216],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "PlagueWalker's House",
+    owner: "PlagueWalker",
+    rent: 467,
+    coords: [
+      [32, 224],
+      [32, 256],
+      [72, 256],
+      [72, 224],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "darlingdeers's House",
+    owner: "darlingdeers",
+    rent: 467,
+    coords: [
+      [72, 224],
+      [72, 256],
+      [112, 256],
+      [112, 224],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "darlingdeers's House",
+    owner: "darlingdeers",
+    rent: 467,
+    coords: [
+      [64, 0],
+      [64, 40],
+      [96, 40],
+      [96, 0],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "darlingdeers's House",
+    owner: "darlingdeers",
+    rent: 467,
+    coords: [
+      [96, 0],
+      [96, 40],
+      [128, 40],
+      [128, 0],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "darlingdeers's House",
+    owner: "darlingdeers",
+    rent: 467,
+    coords: [
+      [128, 0],
+      [128, 40],
+      [160, 40],
+      [160, 0],
+    ],
+    img: 'opg356.png',
+    teleport: [33, 225, 36],
+    location: 'Horse Heights',
+  },
 ];
