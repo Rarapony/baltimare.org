@@ -9,6 +9,5 @@ export default defineConfig({
   prefetch: {
     prefetchAll: true
   },
-  integrations: [tailwind(), vue(), icon()],
-  output: "hybrid",
+  integrations: [tailwind(), vue(), icon()]
 });
