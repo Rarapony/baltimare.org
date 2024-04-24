@@ -307,20 +307,20 @@ const teleportToUser = (user) => {
         <span class="font-semibold">{{
           $avatarPos.length ? $avatarPos.length - 2 : "?"
         }}</span>
-        / 200
+        / 220
       </div>
-      <div class="mb-2 mt-2 flex justify-around items-cennter">
-        <div class="text-base text-black font-normal text-center">
-          <span class="font-normal uppercase">Baltimare: </span>
+      <div class="my-1 flex flex-col items-center">
+        <div class="text-sm text-black font-normal text-center">
+          <span class="font-medium uppercase">Baltimare: </span>
           <span class="font-normal">{{
             $avatarPos.filter((x) => x.location === "Baltimare").length - 1
-          }}</span>
+          }}</span> / 110
         </div>
-        <div class="text-base text-black font-normal text-center">
-          <span class="font-normal uppercase">Horse Heights: </span>
+        <div class="text-sm text-black font-normal text-center">
+          <span class="font-medium uppercase">Horse Heights: </span>
           <span class="font-normal">{{
             $avatarPos.filter((x) => x.location === "Horse Heights").length - 1
-          }}</span>
+          }}</span> / 110
         </div>
       </div>
       <div
