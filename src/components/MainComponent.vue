@@ -117,7 +117,10 @@ const teleportToUser = (user) => {
       />
       <div v-for="(user, idx) in $avatarPos">
         <div
-          v-if="user.user_name !== 'BaltiMare Resident'"
+          v-if="
+            user.user_name !== 'BaltiMare Resident' &&
+            user.user_name !== 'HorseHeights Resident'
+          "
           class="absolute flex flex-col items-center justify-center duration-[1500ms] z-50"
           :style="
             user.location === 'Baltimare'
@@ -299,12 +302,26 @@ const teleportToUser = (user) => {
       } rounded-2xl mt-4 mx-4 px-4 py-4 bg-amber-50 rotate-3`"
       style="font-family: 'Poppins'; filter: drop-shadow(0 2px 2px #000)"
     >
-      <div class="mb-4 text-2xl text-black font-semibold text-center">
+      <div class="text-2xl text-black font-semibold text-center">
         <span class="font-semibold uppercase">Online: </span>
         <span class="font-semibold">{{
-          $avatarPos.length ? $avatarPos.length - 1 : "?"
+          $avatarPos.length ? $avatarPos.length - 2 : "?"
         }}</span>
         / 200
+      </div>
+      <div class="mb-2 mt-2 flex justify-around items-cennter">
+        <div class="text-base text-black font-normal text-center">
+          <span class="font-normal uppercase">Baltimare: </span>
+          <span class="font-normal">{{
+            $avatarPos.filter((x) => x.location === "Baltimare").length - 1
+          }}</span>
+        </div>
+        <div class="text-base text-black font-normal text-center">
+          <span class="font-normal uppercase">Horse Heights: </span>
+          <span class="font-normal">{{
+            $avatarPos.filter((x) => x.location === "Horse Heights").length - 1
+          }}</span>
+        </div>
       </div>
       <div
         v-if="$avatarPos.length"
@@ -314,7 +331,9 @@ const teleportToUser = (user) => {
       >
         <div
           v-for="(user, idx) in $avatarPos.filter(
-            (u) => u.display_name !== 'BaltiMare'
+            (u) =>
+              u.display_name !== 'BaltiMare' &&
+              u.display_name !== 'Builder Pony'
           )"
           @mouseover="magnify(user)"
           @mouseout="demagnify(user)"
