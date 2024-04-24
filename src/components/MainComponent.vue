@@ -110,7 +110,7 @@ const teleportToUser = (user) => {
     </a>
     <div class="w-4/5 relative flex rounded-lg mt-4">
       <img
-        src="../assets/mapcropped2.png?url"
+        src="../assets/mapcropped3.png?url"
         class="w-full rounded-lg"
         usemap="#image-map"
         id="map"
@@ -167,7 +167,7 @@ const teleportToUser = (user) => {
                 .replace(' ', '.')
                 .toLowerCase()}/thumb_sl_image.png`"
               onerror="this.src='/twi.png'"
-              class="cursor-pointer glow bg-white w-6 h-6 rounded-full border border-white shadow-2xl z-50 duration-[1500ms]"
+              class="cursor-pointer glow bg-white min-w-6 max-w-6 w-6 min-h-6 max-h-6 h-6 rounded-full border border-white shadow-2xl z-50 duration-[1500ms]"
             />
           </Tippy>
         </div>
