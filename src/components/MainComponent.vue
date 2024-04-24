@@ -91,7 +91,7 @@ const teleportToUser = (user) => {
       href="https://boards.4chan.org/mlp/thread/41026390"
       class="w-full flex flex-col items-center justify-center cursor-pointer hover:opacity-40 duration-300"
     >
-      <div class="text-blue-300 text-6xl uppercase font-semibold tracking-wide">
+      <div class="w-64 lg:w-auto text-blue-300 text-6xl uppercase font-semibold tracking-wide">
         <img
           src="../assets/baltimare.png?url"
           style="filter: drop-shadow(0 4px 4px #000)"
@@ -99,7 +99,7 @@ const teleportToUser = (user) => {
         />
       </div>
       <div
-        class="-mt-32 text-blue-300 text-6xl uppercase font-semibold tracking-wide"
+        class="w-32 lg:w-auto -mt-12 lg:-mt-32 text-blue-300 text-6xl uppercase font-semibold tracking-wide"
       >
         <img
           src="../assets/opg.png?url"
@@ -108,7 +108,7 @@ const teleportToUser = (user) => {
         />
       </div>
     </a>
-    <div class="w-4/5 relative flex rounded-lg mt-4">
+    <div class="w-full lg:w-4/5 relative flex rounded-lg mt-4">
       <img
         src="../assets/mapcropped3.png?url"
         class="w-full rounded-lg"
@@ -297,9 +297,9 @@ const teleportToUser = (user) => {
       </dialog>
     </div>
     <div
-      :class="`absolute ${$avatarPos.length > 40 ? '-right-80' : '-right-48'} ${
+      :class="`-bottom-40 lg:bottom-auto absolute ${$avatarPos.length > 40 ? 'lg:-right-80' : 'lg:-right-48'} ${
         $avatarPos.length ? '' : 'w-72'
-      } rounded-2xl mt-4 mx-4 px-4 py-4 bg-amber-50 rotate-3`"
+      } rounded-2xl mt-4 mx-4 px-4 py-4 bg-amber-50 rotate-0 lg:rotate-3`"
       style="font-family: 'Poppins'; filter: drop-shadow(0 2px 2px #000)"
     >
       <div class="text-2xl text-black font-semibold text-center">
@@ -310,7 +310,7 @@ const teleportToUser = (user) => {
         / 220
       </div>
       <div class="my-1 flex flex-col items-center">
-        <div class="text-sm text-black font-normal text-center">
+        <div class="lg:text-sm text-black font-normal text-center">
           <span class="font-medium uppercase">Baltimare: </span>
           <span class="font-normal">{{
             $avatarPos.filter((x) => x.location === "Baltimare").length - 1
@@ -338,7 +338,7 @@ const teleportToUser = (user) => {
           @mouseover="magnify(user)"
           @mouseout="demagnify(user)"
           @click="teleportToUser(user)"
-          class="w-full"
+          class="hidden lg:block w-full"
         >
           <div
             class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-pointer font-medium gap-x-2 flex items-center justify-start"
@@ -348,7 +348,7 @@ const teleportToUser = (user) => {
               class="w-4 h-4 rounded"
               onerror="this.src='/twi.png'"
             />
-            <span class="text-sm font-medium">
+            <span class="text-xs lg:text-sm font-medium">
               {{ user.display_name.replace(" Resident", "") }}
             </span>
           </div>

@@ -113,15 +113,15 @@ const images = {
   </head>
   <body>
     <div
-      class="overflow-hidden w-full min-h-screen flex items-center justify-center bg-black bg-contain"
+      class="overflow-hidden lg:p-auto px-2 w-full min-h-screen flex items-center justify-center bg-black bg-contain"
       style={`background-image: url('${selectedBg}')`}
     >
       <div
         style={`filter: drop-shadow(0 10px 10px #000); background-image: url('${images[pathname]}')`}
-        class="bg-white -rotate-1 flex flex-col items-center justify-center border-[16px] border-amber-50 rounded-lg w-320 h-224 bg-cover"
+        class="bg-white rotate-0 lg:-rotate-1 flex flex-col items-center justify-center border-[6px] lg:border-[16px] border-amber-50 rounded-lg w-full h-full lg:w-320 lg:h-224 bg-cover"
       >
-        <slot />
         <Navbar />
+        <slot />
       </div>
     </div>
   </body><style is:global>
