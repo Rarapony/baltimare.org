@@ -437,8 +437,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "harmonymickain's House",
-    owner: "harmonymickain",
+    name: "?'s House",
+    owner: "?",
     rent: 467,
     coords: [
       [0, 0],
@@ -453,8 +453,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "FenrisEbonyglow's House",
-    owner: "FenrisEbonyglow",
+    name: "?'s House",
+    owner: "?",
     rent: 1495,
     coords: [
       [0, 68],
