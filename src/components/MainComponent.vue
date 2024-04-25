@@ -29,13 +29,18 @@ const $avatarPos = computed(() => {
     ...x,
     location: "Horse Heights",
   }));
-  return baltimare.concat(horseHeights);
+  return baltimare
+    .concat(horseHeights)
+    .filter(
+      (x) =>
+        !["BaltiMare Resident", "HorseHeights Resident"].includes(x.user_name)
+    );
 });
 
-const $avatarPosObj = computed(() => ({
-  ...$avatarPosObjBaltimare.value,
-  ...$avatarPosObjHorseHeights.value,
-}));
+// const $avatarPosObj = computed(() => ({
+//   ...$avatarPosObjBaltimare.value,
+//   ...$avatarPosObjHorseHeights.value,
+// }));
 
 updateData();
 
@@ -91,7 +96,9 @@ const teleportToUser = (user) => {
       href="https://boards.4chan.org/mlp/thread/41026390"
       class="w-full flex flex-col items-center justify-center cursor-pointer hover:opacity-40 duration-300"
     >
-      <div class="w-64 lg:w-auto text-blue-300 text-6xl uppercase font-semibold tracking-wide">
+      <div
+        class="w-64 lg:w-auto text-blue-300 text-6xl uppercase font-semibold tracking-wide"
+      >
         <img
           src="../assets/baltimare.png?url"
           style="filter: drop-shadow(0 4px 4px #000)"
@@ -115,61 +122,59 @@ const teleportToUser = (user) => {
         usemap="#image-map"
         id="map"
       />
-      <div v-for="(user, idx) in $avatarPos">
-        <div
-          v-if="
-            user.user_name !== 'BaltiMare Resident' &&
-            user.user_name !== 'HorseHeights Resident'
-          "
-          class="absolute flex flex-col items-center justify-center duration-[1500ms] z-50"
-          :style="
-            user.location === 'Baltimare'
-              ? {
-                  left:
+      <div
+        v-for="(user, idx) in $avatarPos"
+        :style="
+          user.location === 'Baltimare'
+            ? {
+                left:
+                  50 +
+                  ($avatarPosObjBaltimare[user.UUID].user_position[0] / 256) *
                     50 +
-                    ($avatarPosObj?.[user.UUID]?.user_position[0] / 256) * 50 +
-                    '%',
-                  bottom:
-                    ($avatarPosObj?.[user.UUID]?.user_position[1] / 256) * 100 +
-                    '%',
-                }
-              : {
-                  left:
-                    ($avatarPosObj?.[user.UUID]?.user_position[0] / 256) * 50 +
-                    '%',
-                  bottom:
-                    ($avatarPosObj?.[user.UUID]?.user_position[1] / 256) * 100 +
-                    '%',
-                }
-          "
-          @mouseover="magnify(user)"
-          @mouseout="demagnify(user)"
-          :id="user.UUID"
-          :key="user.UUID"
+                  '%',
+                bottom:
+                  ($avatarPosObjBaltimare[user.UUID].user_position[1] / 256) *
+                    100 +
+                  '%',
+              }
+            : {
+                left:
+                  ($avatarPosObjHorseHeights[user.UUID].user_position[0] /
+                    256) *
+                    50 +
+                  '%',
+                bottom:
+                  ($avatarPosObjHorseHeights[user.UUID].user_position[1] /
+                    256) *
+                    100 +
+                  '%',
+              }
+        "
+        class="absolute flex flex-col items-center justify-center duration-[1500ms] z-50"
+        :id="user.UUID"
+        :key="user.UUID"
+        @mouseover="magnify(user)"
+        @mouseout="demagnify(user)"
+      >
+        <Tippy
+          :content="`<div class='text-center'><h1 class='text-base font-medium'>${user.display_name.replace(
+            ' Resident',
+            ''
+          )}</h1><h6 class='text-xs'>${user.user_name.replace(
+            ' Resident',
+            ''
+          )}</h6></div>`"
+          :allowHTML="true"
         >
-          <!-- <div class="text-xs text-center cursor-default text-neutral-800 font-semibold">
-            {{ user.display_name.replace(" Resident", "") }}
-          </div> -->
-          <Tippy
-            :content="`<div class='text-center'><h1 class='text-base font-medium'>${user.display_name.replace(
-              ' Resident',
-              ''
-            )}</h1><h6 class='text-xs'>${user.user_name.replace(
-              ' Resident',
-              ''
-            )}</h6></div>`"
-            :allowHTML="true"
-          >
-            <img
-              :src="`https://my-secondlife-agni.akamaized.net/users/${user.user_name
-                .replace(' Resident', '')
-                .replace(' ', '.')
-                .toLowerCase()}/thumb_sl_image.png`"
-              onerror="this.src='/twi.png'"
-              class="cursor-pointer glow bg-white min-w-6 max-w-6 w-6 min-h-6 max-h-6 h-6 rounded-full border border-white shadow-2xl z-50 duration-[1500ms]"
-            />
-          </Tippy>
-        </div>
+          <img
+            :src="`https://my-secondlife-agni.akamaized.net/users/${user.user_name
+              .replace(' Resident', '')
+              .replace(' ', '.')
+              .toLowerCase()}/thumb_sl_image.png`"
+            onerror="this.src='/twi.png'"
+            class="cursor-pointer glow bg-white min-w-6 max-w-6 w-6 min-h-6 max-h-6 h-6 rounded-full border border-white shadow-2xl z-50 duration-[1500ms]"
+          />
+        </Tippy>
       </div>
       <div
         v-for="parcel in parcels"
@@ -296,7 +301,9 @@ const teleportToUser = (user) => {
       </dialog>
     </div>
     <div
-      :class="`-bottom-40 lg:bottom-auto absolute ${$avatarPos.length > 40 ? 'lg:-right-80' : 'lg:-right-48'} ${
+      :class="`-bottom-40 lg:bottom-auto absolute ${
+        $avatarPos.length > 40 ? 'lg:-right-80' : 'lg:-right-48'
+      } ${
         $avatarPos.length ? '' : 'w-72'
       } rounded-2xl mt-4 mx-4 px-4 py-4 bg-amber-50 rotate-0 lg:rotate-3`"
       style="font-family: 'Poppins'; filter: drop-shadow(0 2px 2px #000)"
@@ -313,13 +320,15 @@ const teleportToUser = (user) => {
           <span class="font-medium uppercase">Baltimare: </span>
           <span class="font-normal">{{
             $avatarPos.filter((x) => x.location === "Baltimare").length - 1
-          }}</span> / 110
+          }}</span>
+          / 110
         </div>
         <div class="text-sm text-black font-normal text-center">
           <span class="font-medium uppercase">Horse Heights: </span>
           <span class="font-normal">{{
             $avatarPos.filter((x) => x.location === "Horse Heights").length - 1
-          }}</span> / 110
+          }}</span>
+          / 110
         </div>
       </div>
       <div
