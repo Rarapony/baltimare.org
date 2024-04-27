@@ -249,7 +249,7 @@ const teleportToUser = (user) => {
           <div class="flex items-center justify-center w-1/2 my-8">
             <img
               :src="
-                parcel.img ? `/${parcel.img}` : '/Feast_Hall_Preparations.png'
+                parcel.img ? `${parcel.img}` : '/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
