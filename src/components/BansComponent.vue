@@ -30,9 +30,9 @@ const filteredBans = computed(() => {
       return dateBanned <= endDate && dateBanned >= startDate;
     })
     .sort((x, y) => {
-      return x.dateBanned < y.dateBanned
+      return x.dateBanned > y.dateBanned
         ? -1
-        : x.dateBanned > y.dateBanned
+        : x.dateBanned < y.dateBanned
         ? 1
         : 0;
     });
@@ -42,7 +42,7 @@ const getUTCTimestamp = (d) => {
   const date = temp[0];
   const time = temp[1].split(".")[0];
 
-  return `${date} ${time} EST`;
+  return `${date} ${time} PST`;
 };
 </script>
 

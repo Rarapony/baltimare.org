@@ -283,7 +283,7 @@ const teleportToUser = (user) => {
             >
               Current occupants:
               {{
-                $avatarPos.filter(
+                sortedAvatarPos.filter(
                   (u) =>
                     u.location === parcel.location &&
                     u.user_position[0] >= parcel.coords[0][0] &&
@@ -298,6 +298,7 @@ const teleportToUser = (user) => {
                 class="flex gap-x-1 items-center whitespace-nowrap"
                 v-for="user in sortedAvatarPos.filter(
                   (u) =>
+                    u.location === parcel.location &&
                     u.user_position[0] >= parcel.coords[0][0] &&
                     u.user_position[0] <= parcel.coords[3][0] &&
                     u.user_position[1] >= parcel.coords[0][1] &&
