@@ -937,10 +937,10 @@ export default [
     owner: "Rarapony",
     rent: Infinity,
     coords: [
-      [90, 90],
+      [90, 110],
       [90, 145],
       [140, 145],
-      [140, 90],
+      [140, 110],
     ],
     img: 'apr26party.png',
     teleport: [0, 0, 0],

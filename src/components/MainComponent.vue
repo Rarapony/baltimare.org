@@ -308,7 +308,7 @@ const teleportToUser = (user) => {
       :class="`-bottom-40 lg:bottom-auto absolute ${
         $avatarPos.length > 40 ? 'lg:-right-80' : 'lg:-right-48'
       } ${
-        $avatarPos.length ? '' : 'w-72'
+        $avatarPos.length ? '' : 'min-w-72'
       } rounded-2xl mt-4 mx-4 px-4 py-4 bg-amber-50 rotate-0 lg:rotate-3`"
       style="font-family: 'Poppins'; filter: drop-shadow(0 2px 2px #000)"
     >
@@ -338,56 +338,56 @@ const teleportToUser = (user) => {
       <div
         v-if="$avatarPos.length"
       >
-      <div v-if="$avatarPos.length > 40" class="min-w-120 w-120 columns-2">
-        <div
-          v-for="(user, idx) in $avatarPos.filter(
-            (u) =>
-              u.display_name !== 'BaltiMare' &&
-              u.display_name !== 'Builder Pony'
-          )"
-          @mouseover="magnify(user)"
-          @mouseout="demagnify(user)"
-          class="hidden lg:block w-full"
-        >
+        <div v-if="$avatarPos.length > 40" class="min-w-120 w-120 columns-2">
           <div
-            class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-pointer font-medium gap-x-2 flex items-center justify-start"
+            v-for="(user, idx) in $avatarPos.filter(
+              (u) =>
+                u.display_name !== 'BaltiMare' &&
+                u.display_name !== 'Builder Pony'
+            )"
+            @mouseover="magnify(user)"
+            @mouseout="demagnify(user)"
+            class="hidden lg:block w-full"
           >
-            <img
-              :src="user.pfp"
-              class="w-4 h-4 rounded"
-              onerror="this.src='/twi.png'"
-            />
-            <span class="text-xs lg:text-sm font-medium">
-              {{ user.display_name.replace(" Resident", "") }}
-            </span>
+            <div
+              class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-pointer font-medium gap-x-2 flex items-center justify-start"
+            >
+              <img
+                :src="user.pfp"
+                class="w-4 h-4 rounded"
+                onerror="this.src='/twi.png'"
+              />
+              <span class="text-xs lg:text-sm font-medium">
+                {{ user.display_name.replace(" Resident", "") }}
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      <div v-else class="min-w-64 w-64 columns-1">
-        <div
-          v-for="(user, idx) in $avatarPos.filter(
-            (u) =>
-              u.display_name !== 'BaltiMare' &&
-              u.display_name !== 'Builder Pony'
-          )"
-          @mouseover="magnify(user)"
-          @mouseout="demagnify(user)"
-          class="hidden lg:block w-full"
-        >
+        <div v-else class="min-w-64 w-64 columns-1">
           <div
-            class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-pointer font-medium gap-x-2 flex items-center justify-start"
+            v-for="(user, idx) in $avatarPos.filter(
+              (u) =>
+                u.display_name !== 'BaltiMare' &&
+                u.display_name !== 'Builder Pony'
+            )"
+            @mouseover="magnify(user)"
+            @mouseout="demagnify(user)"
+            class="hidden lg:block w-full"
           >
-            <img
-              :src="user.pfp"
-              class="w-4 h-4 rounded"
-              onerror="this.src='/twi.png'"
-            />
-            <span class="text-xs lg:text-sm font-medium">
-              {{ user.display_name.replace(" Resident", "") }}
-            </span>
+            <div
+              class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-pointer font-medium gap-x-2 flex items-center justify-start"
+            >
+              <img
+                :src="user.pfp"
+                class="w-4 h-4 rounded"
+                onerror="this.src='/twi.png'"
+              />
+              <span class="text-xs lg:text-sm font-medium">
+                {{ user.display_name.replace(" Resident", "") }}
+              </span>
+            </div>
           </div>
         </div>
-      </div>
       </div>
       <div
         v-else
