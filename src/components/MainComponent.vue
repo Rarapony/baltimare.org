@@ -323,14 +323,14 @@ const teleportToUser = (user) => {
         <div class="lg:text-sm text-black font-normal text-center">
           <span class="font-medium uppercase">Baltimare: </span>
           <span class="font-normal">{{
-            $avatarPos.filter((x) => x.location === "Baltimare").length - 1
+            Math.max(0, $avatarPos.filter((x) => x.location === "Baltimare").length - 1)
           }}</span>
           / 110
         </div>
         <div class="text-sm text-black font-normal text-center">
           <span class="font-medium uppercase">Horse Heights: </span>
           <span class="font-normal">{{
-            $avatarPos.filter((x) => x.location === "Horse Heights").length - 1
+            Math.max(0, $avatarPos.filter((x) => x.location === "Horse Heights").length - 1)
           }}</span>
           / 110
         </div>
@@ -338,7 +338,7 @@ const teleportToUser = (user) => {
       <div
         v-if="$avatarPos.length"
       >
-      <div v-if="$avatarPos.length > 40" class="w-120 columns-2">
+      <div v-if="$avatarPos.length > 40" class="min-w-120 w-120 columns-2">
         <div
           v-for="(user, idx) in $avatarPos.filter(
             (u) =>
@@ -363,7 +363,7 @@ const teleportToUser = (user) => {
           </div>
         </div>
       </div>
-      <div v-else class="w-64 columns-1">
+      <div v-else class="min-w-64 w-64 columns-1">
         <div
           v-for="(user, idx) in $avatarPos.filter(
             (u) =>
