@@ -60,6 +60,8 @@ updateData();
 
 onMounted(() => {
   updateData();
+  
+  dragElement(document.getElementById("mydiv"));
 });
 
 const magnify = (user) => {
@@ -102,6 +104,49 @@ const teleportToUser = (user) => {
   }`;
   window.location.href = URL;
 };
+
+
+function dragElement(elmnt) {
+  console.log(elmnt)
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
 </script>
 
 <template>
@@ -323,15 +368,11 @@ const teleportToUser = (user) => {
         </div>
       </dialog>
     </div>
-    <div
-      :class="`-bottom-40 lg:bottom-auto absolute ${
-        $avatarPos.length > 40 ? 'lg:-right-80' : 'lg:-right-64'
-      } ${$avatarPos.length ? '' : 'min-w-72'} ${
-        show ? '' : 'w-80 lg:-right-56'
-      } rounded-2xl mt-4 mx-4 px-4 py-4 bg-amber-50 rotate-0 lg:rotate-3`"
-      style="font-family: 'Poppins'; filter: drop-shadow(0 2px 2px #000)"
+    <div id="mydiv" 
+      :class="`z-50 absolute bg-amber-50 opacity-90 hover:bg-amber-100 active:opacity-50 cursor-move rotate-0 lg:rotate-3 lg:translate-x-[135%] px-4 py-4 rounded-2xl`"
+      style="font-family: 'Poppins'; filter: drop-shadow(0 2px 2px #000); transition-duration: 300ms; transition-property: background-color, opacity;"
     >
-      <div class="text-2xl text-black font-semibold text-center">
+      <div class="text-2xl text-black font-semibold text-center" id="myDivheader">
         <span class="font-semibold uppercase">Online: </span>
         <span class="font-semibold">{{
           $avatarPos.length ? $avatarPos.length - 2 : "?"
