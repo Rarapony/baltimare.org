@@ -146,23 +146,23 @@ const teleportToUser = (user) => {
                 left:
                   50 +
                   ($avatarPosObjBaltimare[user.UUID].user_position[0] / 256) *
-                    50 +
+                    50 - 0.5 +
                   '%',
                 bottom:
                   ($avatarPosObjBaltimare[user.UUID].user_position[1] / 256) *
-                    100 +
+                    100 - 3 +
                   '%',
               }
             : {
                 left:
                   ($avatarPosObjHorseHeights[user.UUID].user_position[0] /
                     256) *
-                    50 +
+                    50 - 0.5 +
                   '%',
                 bottom:
                   ($avatarPosObjHorseHeights[user.UUID].user_position[1] /
                     256) *
-                    100 +
+                    100 - 3 +
                   '%',
               }
         "
