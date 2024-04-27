@@ -148,23 +148,27 @@ const teleportToUser = (user) => {
                 left:
                   50 +
                   ($avatarPosObjBaltimare[user.UUID].user_position[0] / 256) *
-                    50 - 0.5 +
+                    50 -
+                  0.5 +
                   '%',
                 bottom:
                   ($avatarPosObjBaltimare[user.UUID].user_position[1] / 256) *
-                    100 - 3 +
+                    100 -
+                  3 +
                   '%',
               }
             : {
                 left:
                   ($avatarPosObjHorseHeights[user.UUID].user_position[0] /
                     256) *
-                    50 - 0.5 +
+                    50 -
+                  0.5 +
                   '%',
                 bottom:
                   ($avatarPosObjHorseHeights[user.UUID].user_position[1] /
                     256) *
-                    100 - 3 +
+                    100 -
+                  3 +
                   '%',
               }
         "
@@ -271,9 +275,9 @@ const teleportToUser = (user) => {
             </div>
             <a
               style="filter: drop-shadow(0 1px 1px #000)"
-              :href="`secondlife://${parcel.location.toUpperCase()}/${parcel?.teleport?.[0] || 0}/${
-                parcel?.teleport?.[1] || 0
-              }/${parcel?.teleport?.[2] || 0}`"
+              :href="`secondlife://${parcel.location.toUpperCase()}/${
+                parcel?.teleport?.[0] || 0
+              }/${parcel?.teleport?.[1] || 0}/${parcel?.teleport?.[2] || 0}`"
               :class="`text-xl tracking-wide rounded bg-blue-400 hover:bg-blue-600 duration-200 text-center mx-auto px-3 py-1 uppercase text-white cursor-pointer`"
             >
               Teleport here
@@ -322,8 +326,8 @@ const teleportToUser = (user) => {
     <div
       :class="`-bottom-40 lg:bottom-auto absolute ${
         $avatarPos.length > 40 ? 'lg:-right-80' : 'lg:-right-64'
-      } ${
-        $avatarPos.length ? '' : 'min-w-72'
+      } ${$avatarPos.length ? '' : 'min-w-72'} ${
+        show ? '' : 'w-80 lg:-right-56'
       } rounded-2xl mt-4 mx-4 px-4 py-4 bg-amber-50 rotate-0 lg:rotate-3`"
       style="font-family: 'Poppins'; filter: drop-shadow(0 2px 2px #000)"
     >
@@ -357,7 +361,7 @@ const teleportToUser = (user) => {
           / 110
         </div>
       </div>
-      <div v-if="$avatarPos.length">
+      <div v-if="$avatarPos.length && show">
         <div v-if="$avatarPos.length > 41" class="min-w-120 w-120 columns-2">
           <div
             v-for="(user, idx) in sortedAvatarPos"
@@ -406,12 +410,15 @@ const teleportToUser = (user) => {
         </div>
       </div>
       <div
-        v-else
+        v-else-if="show"
         class="min-h-80 flex flex-col items-center justify-center text-center"
       >
         <img class="max-w-80" src="../assets/twi.gif?url" />
         <div class="text-center mt-1 text-lg">Loading users...</div>
       </div>
+      <!-- <div v-if="!show">
+        <input /> Disable
+      </div> -->
     </div>
   </div>
 </template>

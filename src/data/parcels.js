@@ -1378,7 +1378,7 @@ export default [
       [244, 0],
     ],
     img: `/threads/${images[~~(Math.random() * images.length)]}`,
-    teleport: [70, 150, 38],
+    teleport: [221, 46, 38],
     location: 'Horse Heights',
   },
 ];

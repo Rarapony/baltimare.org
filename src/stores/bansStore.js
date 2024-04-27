@@ -3,7 +3,7 @@ import { map, atom } from "nanostores";
 export const bans = map([]);
 
 const fetchBans = async () => {
-  const api = "https://baltimare.org/hhapi/estatebannedusers";
+  const api = "https://api.baltimare.org/hhapi/estatebannedusers";
   try {
     const response = await fetch(api);
     const data = await response.json();

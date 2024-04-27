@@ -6,7 +6,7 @@ export const avatarPosObjBaltimare = map({});
 export const avatarPosObjHorseHeights = map({});
 
 const fetchAvatarPositionsBaltimare = async () => {
-  const api = "https://baltimare.org/corrade/getavatarpositions";
+  const api = "https://api.baltimare.org/corrade/getavatarpositions";
   try {
     const response = await fetch(api);
     const data = await response.json();
@@ -32,7 +32,7 @@ const fetchAvatarPositionsBaltimare = async () => {
 };
 
 const fetchAvatarPositionsHorseHeights = async () => {
-  const api = "https://baltimare.org/hhapi/getavatarpositions";
+  const api = "https://api.baltimare.org/hhapi/getavatarpositions";
   try {
     const response = await fetch(api);
     const data = await response.json();
