@@ -1,15 +1,14 @@
 ---
+export const prerender = false;
+
 import Navbar from "../components/Navbar.astro";
 import { ViewTransitions } from "astro:transitions";
 import { getImage } from "astro:assets";
 const { title } = Astro.props;
 
-
-
 const { pathname } = Astro.url;
 
 const backgrounds = ["squarestones.png", "grass.png", "sidewalk.png"];
-
 
 import bgImage1 from "../assets/textures/squarestones.png";
 import bgImage2 from "../assets/textures/grass.png";
@@ -30,8 +29,7 @@ const bgImages = [bgImage1, bgImage2, bgImage3].map(async (image) => {
 });
 
 const bgs = await Promise.all(bgImages);
-// const randomIndex = ~~(Math.random() * bgs.length);
-const randomIndex = 0;
+const randomIndex = ~~(Math.random() * bgs.length);
 const selectedBg = bgs[randomIndex];
 
 const card1Url = (await getImage({

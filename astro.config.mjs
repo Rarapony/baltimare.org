@@ -11,6 +11,6 @@ export default defineConfig({
     prefetchAll: true
   },
   integrations: [tailwind(), vue(), icon()],
-  // output: "server",
-  // adapter: cloudflare()
+  output: "hybrid",
+  adapter: cloudflare()
 });
