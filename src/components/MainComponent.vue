@@ -411,7 +411,7 @@ function dragElement(elmnt) {
             class="hidden lg:block w-full"
           >
             <div
-              class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-pointer font-medium gap-x-2 flex items-center justify-start"
+              class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-move font-medium gap-x-2 flex items-center justify-start"
             >
               <img
                 :src="user.pfp"
@@ -436,7 +436,7 @@ function dragElement(elmnt) {
             class="hidden lg:block w-full"
           >
             <div
-              class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-pointer font-medium gap-x-2 flex items-center justify-start"
+              class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-move font-medium gap-x-2 flex items-center justify-start"
             >
               <img
                 :src="user.pfp"
