@@ -210,7 +210,7 @@ const teleportToUser = (user) => {
       ></div>
       <dialog
         :style="{ 'font-family': 'Poppins' }"
-        class="p-0 cursor-default max-h-screen"
+        class="p-0 cursor-default max-h-screen overflow-hidden"
         v-for="parcel in parcels"
         :id="`dialog-${parcel.name}`"
       >
@@ -265,7 +265,7 @@ const teleportToUser = (user) => {
               Teleport here
             </a>
           </div>
-          <div class="my-8 flex flex-col w-full xl:w-full lg:ml-12">
+          <div class="mt-4 flex flex-col w-full xl:w-full lg:ml-12">
             <div
               class="md:py-0 text-xl lg:text-2xl xl:text-3xl text-center tracking-wide font-semibold uppercase"
             >
