@@ -336,7 +336,7 @@ const teleportToUser = (user) => {
         :class="`${
           $avatarPos.length > 40 ? 'max-w-120 columns-2' : 'w-64 columns-1'
         }`"
-      >
+      > {{ $avatarPos.length }}
         <div
           v-for="(user, idx) in $avatarPos.filter(
             (u) =>
