@@ -37,6 +37,13 @@ const filteredBans = computed(() => {
         : 0;
     });
 });
+const getUTCTimestamp = (d) => {
+  const temp = d.toISOString().split("T");
+  const date = temp[0];
+  const time = temp[1].split(".")[0];
+
+  return `${date} ${time} EST`;
+};
 </script>
 
 <template>
@@ -56,11 +63,17 @@ const filteredBans = computed(() => {
       </div>
       <div class="font-medium">
         From:
-        <input v-model="from" type="date" min="0" max="11" class="rounded" />
+        <input
+          v-model="from"
+          type="date"
+          min="0"
+          max="11"
+          class="rounded px-1"
+        />
       </div>
       <div class="font-medium">
         To:
-        <input v-model="to" type="date" min="0" max="11" class="rounded" />
+        <input v-model="to" type="date" min="0" max="11" class="rounded px-1" />
       </div>
     </div>
     <table
@@ -70,14 +83,14 @@ const filteredBans = computed(() => {
       <tr class="text-sm font-bold">
         <th class="w-64 text-left">Banned user</th>
         <th class="w-64 text-left">Banned by</th>
-        <th class="w-24 text-center">Ban date</th>
+        <th class="w-40 text-center">Ban date</th>
         <!-- <th class="w-24 text-center">Last login</th> -->
       </tr>
       <tr class="text-xs font-medium" v-for="ban in filteredBans">
         <td>{{ ban.username.replace(" Resident", "") }}</td>
         <td>{{ ban.jannyUsername.replace(" Resident", "") }}</td>
         <td class="font-mono text-center font-bold">
-          {{ new Date(ban.dateBanned).toISOString().split("T")[0] }}
+          {{ getUTCTimestamp(new Date(ban.dateBanned)) }}
         </td>
         <!-- <td class="font-mono text-center font-bold">
           {{ new Date(ban.lastLogin).toISOString().split("T")[0] }}
