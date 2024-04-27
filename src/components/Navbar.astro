@@ -17,23 +17,23 @@ const { pathname } = Astro.url;
       href="/about">About</a
     > -->
     <a
-      class={`hover:underline underline-offset-8 ${pathname === "/rules" ? "underline" : null}`}
+      class={`hover:underline underline-offset-8 ${pathname.includes("/rules") ? "underline" : null}`}
       href="/rules">Rules</a
     >
     <a
-      class={`hover:underline underline-offset-8 ${pathname === "/faq" ? "underline" : null}`}
+      class={`hover:underline underline-offset-8 ${pathname.includes("/faq") ? "underline" : null}`}
       href="/faq">FAQ</a
     >
     <a
-      class={`hover:underline underline-offset-8 ${pathname === "/gallery" ? "underline" : null}`}
+      class={`hover:underline underline-offset-8 ${pathname.includes("/gallery") ? "underline" : null}`}
       href="/gallery">Gallery</a
     >
     <a
-      class={`hover:underline underline-offset-8 ${pathname === "/bans" ? "underline" : null}`}
+      class={`hover:underline underline-offset-8 ${pathname.includes("/bans") ? "underline" : null}`}
       href="/bans">Bans</a
     >
     <a
-      class={`hover:underline underline-offset-8 ${pathname === "/credits" ? "underline" : null}`}
+      class={`hover:underline underline-offset-8 ${pathname.includes("/credits") ? "underline" : null}`}
       href="/credits">Credits</a
     >
   </nav>
