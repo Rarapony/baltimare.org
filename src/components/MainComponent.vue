@@ -356,7 +356,7 @@ const teleportToUser = (user) => {
         </div>
       </div>
       <div v-if="$avatarPos.length">
-        <div v-if="$avatarPos.length > 40" class="min-w-120 w-120 columns-2">
+        <div v-if="$avatarPos.length > 41" class="min-w-120 w-120 columns-2">
           <div
             v-for="(user, idx) in sortedAvatarPos"
             @mouseover="magnify(user)"
