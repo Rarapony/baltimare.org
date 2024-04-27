@@ -126,8 +126,8 @@ export default [
   },
   {
     type: "parcel",
-    name: "sophia.naumova's House",
-    owner: "sophia.naumova",
+    name: "Tapioca Pudding's House",
+    owner: "Tapioca Pudding",
     rent: 314,
     coords: [
       [224, 0],
@@ -297,8 +297,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "firecrakcr's House",
-    owner: "firecrakcr",
+    name: "Hyacinth Hearts's House",
+    owner: "Hyacinth Hearts",
     rent: 94,
     coords: [
       [0, 136],
@@ -345,8 +345,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "TrashSpaghetti's House",
-    owner: "TrashSpaghetti",
+    name: "Lavender Sunrise's House",
+    owner: "Lavender Sunrise",
     rent: 94,
     coords: [
       [16, 156],
@@ -393,8 +393,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "ElectroKaplosion",
-    owner: "ElectroKaplosion",
+    name: "Red's House",
+    owner: "Red",
     rent: 187,
     coords: [
       [0, 240],
@@ -473,8 +473,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "Xipsyl Vermilion's House",
-    owner: "Xipsyl Vermilion",
+    name: "Xipsyl's House",
+    owner: "Xipsyl",
     rent: 1495,
     coords: [
       [0, 68],
@@ -482,15 +482,15 @@ export default [
       [64, 132],
       [64, 68],
     ],
-    img: `/threads/${images[~~(Math.random() * images.length)]}`,
+    img: `/parcels/xipsyl.png`,
     teleport: [64, 130, 46],
     location: 'Horse Heights',
   },
   {
     parcelID: "",
     type: "parcel",
-    name: "backspace119's House",
-    owner: "backspace119",
+    name: "Sky Line's House",
+    owner: "Sky Line",
     rent: 467,
     coords: [
       [0, 136],
@@ -521,8 +521,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "Whitetail1473's House",
-    owner: "Whitetail1473",
+    name: "Albatross's House",
+    owner: "Albatross",
     rent: 467,
     coords: [
       [0, 216],
@@ -681,8 +681,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "GLaDOS9000's House",
-    owner: "GLaDOS9000",
+    name: "Acura's House",
+    owner: "Acura",
     rent: 234,
     coords: [
       [44, 148],
@@ -690,7 +690,7 @@ export default [
       [64, 180],
       [64, 148],
     ],
-    img: `/threads/${images[~~(Math.random() * images.length)]}`,
+    img: `/parcels/acura.jpg`,
     teleport: [62, 148, 46],
     location: 'Horse Heights',
   },
@@ -825,8 +825,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "Kezter's House",
-    owner: "Kezter",
+    name: "Kezzie's House",
+    owner: "Kezzie",
     rent: 93,
     coords: [
       [224, 136],
@@ -889,8 +889,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "Lullaybat's House",
-    owner: "Lullaybat",
+    name: "Grey's House",
+    owner: "Grey",
     rent: 467,
     coords: [
       [212, 236],

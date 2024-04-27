@@ -12,7 +12,7 @@ import { Image } from "astro:assets";
 //     thread_no: +(temp[temp.length - 1].split(".")[0])
 //   }
 // })
-
+import thread383 from "../assets/threads/383.png";
 import thread382 from "../assets/threads/382.jpg";
 import thread381 from "../assets/threads/381.jpg";
 import thread380 from "../assets/threads/380.jpg";
@@ -98,6 +98,7 @@ import thread301 from "../assets/threads/301.jpg";
 import thread300 from "../assets/threads/300.jpg";
 
 const images = [
+  { img: thread383, thread_no: 383 },
   { img: thread382, thread_no: 382 },
   { img: thread381, thread_no: 381 },
   { img: thread380, thread_no: 380 },
@@ -253,7 +254,7 @@ const images = [
     }
 
     const first = 300;
-    const threads = Array.from({ length: 382 - first + 1 }, (_, index) => first + index);;
+    const threads = Array.from({ length: 383 - first + 1 }, (_, index) => first + index);;
     threads.forEach(t => {
       const img = document.getElementById(`img-thread${t}`);
 
