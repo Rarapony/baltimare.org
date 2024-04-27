@@ -942,7 +942,7 @@ export default [
       [140, 145],
       [140, 90],
     ],
-    img: 'opg356.png',
+    img: 'apr26party.png',
     teleport: [0, 0, 0],
     location: 'Baltimare',
   },
