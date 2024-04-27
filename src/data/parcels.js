@@ -761,8 +761,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "starcasteclipse's House",
-    owner: "starcasteclipse",
+    name: "Starcast Eclipse's House",
+    owner: "Starcast Eclipse",
     rent: 467,
     coords: [
       [84, 180],
@@ -905,8 +905,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "Vulneria's House",
-    owner: "Vulneria",
+    name: "Neri's House",
+    owner: "Neri",
     rent: 467,
     coords: [
       [180, 236],
@@ -969,8 +969,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "Desudesudesuka's House",
-    owner: "Desudesudesuka",
+    name: "Raincloud Flank's House",
+    owner: "Raincloud Flank",
     rent: 467,
     coords: [
       [216, 192],
@@ -1065,8 +1065,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "failedfetus's House",
-    owner: "failedfetus",
+    name: "Saturn Muse's House",
+    owner: "Saturn Muse",
     rent: 93,
     coords: [
       [164, 164],
@@ -1097,8 +1097,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "p0nut's House",
-    owner: "p0nut",
+    name: "gean's House",
+    owner: "gean",
     rent: 467,
     coords: [
       [200, 148],
@@ -1145,8 +1145,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "flowerpone's House",
-    owner: "flowerpone",
+    name: "Hibiscus Heart's House",
+    owner: "Hibiscus Heart",
     rent: 234,
     coords: [
       [180, 84],
@@ -1209,8 +1209,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "alurh's House",
-    owner: "alurh",
+    name: "Arumea's House",
+    owner: "Arumea",
     rent: 93,
     coords: [
       [224, 56],
