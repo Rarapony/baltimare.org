@@ -51,6 +51,40 @@ import thread337 from "../assets/threads/337.png";
 import thread336 from "../assets/threads/336.png";
 import thread335 from "../assets/threads/335.png";
 import thread334 from "../assets/threads/334.png";
+import thread333 from "../assets/threads/333.jpg";
+import thread332 from "../assets/threads/332.png";
+import thread331 from "../assets/threads/331.png";
+import thread330 from "../assets/threads/330.png";
+import thread329 from "../assets/threads/329.png";
+import thread328 from "../assets/threads/328.png";
+import thread327 from "../assets/threads/327.png";
+import thread326 from "../assets/threads/326.png";
+import thread325 from "../assets/threads/325.png";
+import thread324 from "../assets/threads/324.png";
+import thread323 from "../assets/threads/323.png";
+import thread322 from "../assets/threads/322.png";
+import thread321 from "../assets/threads/321.png";
+import thread320 from "../assets/threads/320.jpg";
+import thread319 from "../assets/threads/319.jpg";
+import thread318 from "../assets/threads/318.png";
+import thread317 from "../assets/threads/317.jpg";
+import thread316 from "../assets/threads/316.png";
+import thread315 from "../assets/threads/315.png";
+import thread314 from "../assets/threads/314.jpg";
+import thread313 from "../assets/threads/313.png";
+import thread312 from "../assets/threads/312.jpg";
+import thread311 from "../assets/threads/311.jpg";
+import thread310 from "../assets/threads/310.jpg";
+import thread309 from "../assets/threads/309.png";
+import thread308 from "../assets/threads/308.png";
+import thread307 from "../assets/threads/307.jpg";
+import thread306 from "../assets/threads/306.png";
+import thread305 from "../assets/threads/305.jpg";
+import thread304 from "../assets/threads/304.png";
+import thread303 from "../assets/threads/303.jpg";
+import thread302 from "../assets/threads/302.png";
+import thread301 from "../assets/threads/301.jpg";
+import thread300 from "../assets/threads/300.jpg";
 
 const images = [
   { img: thread382, thread_no: 382 },
@@ -102,9 +136,42 @@ const images = [
   { img: thread336, thread_no: 336 },
   { img: thread335, thread_no: 335 },
   { img: thread334, thread_no: 334 },
+  { img: thread333, thread_no: 333 },
+  { img: thread332, thread_no: 332 },
+  { img: thread331, thread_no: 331 },
+  { img: thread330, thread_no: 330 },
+  { img: thread329, thread_no: 329 },
+  { img: thread328, thread_no: 328 },
+  { img: thread327, thread_no: 327 },
+  { img: thread326, thread_no: 326 },
+  { img: thread325, thread_no: 325 },
+  { img: thread324, thread_no: 324 },
+  { img: thread323, thread_no: 323 },
+  { img: thread322, thread_no: 322 },
+  { img: thread321, thread_no: 321 },
+  { img: thread320, thread_no: 320 },
+  { img: thread319, thread_no: 319 },
+  { img: thread318, thread_no: 318 },
+  { img: thread317, thread_no: 317 },
+  { img: thread316, thread_no: 316 },
+  { img: thread315, thread_no: 315 },
+  { img: thread314, thread_no: 314 },
+  { img: thread313, thread_no: 313 },
+  { img: thread312, thread_no: 312 },
+  { img: thread311, thread_no: 311 },
+  { img: thread310, thread_no: 310 },
+  { img: thread309, thread_no: 309 },
+  { img: thread308, thread_no: 308 },
+  { img: thread307, thread_no: 307 },
+  { img: thread306, thread_no: 306 },
+  { img: thread305, thread_no: 305 },
+  { img: thread304, thread_no: 304 },
+  { img: thread303, thread_no: 303 },
+  { img: thread302, thread_no: 302 },
+  { img: thread301, thread_no: 301 },
+  { img: thread300, thread_no: 300 },
 ];
 ---
-
 <link
   type="text/css"
   rel="stylesheet"
@@ -174,9 +241,9 @@ const images = [
       });
     }
 
-    const threads = Array.from({ length: 382 - 334 + 1 }, (_, index) => 334 + index);;
+    const first = 300;
+    const threads = Array.from({ length: 382 - first + 1 }, (_, index) => first + index);;
     threads.forEach(t => {
-
       const img = document.getElementById(`img-thread${t}`);
 
       if (img) {
