@@ -318,7 +318,7 @@ const teleportToUser = (user) => {
     </div>
     <div
       :class="`-bottom-40 lg:bottom-auto absolute ${
-        $avatarPos.length > 40 ? 'lg:-right-80' : 'lg:-right-80'
+        $avatarPos.length > 40 ? 'lg:-right-80' : 'lg:-right-64'
       } ${
         $avatarPos.length ? '' : 'min-w-72'
       } rounded-2xl mt-4 mx-4 px-4 py-4 bg-amber-50 rotate-0 lg:rotate-3`"

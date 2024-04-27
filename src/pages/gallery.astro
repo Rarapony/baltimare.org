@@ -1,7 +1,115 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import thread382 from "../assets/threads/382.jpg";
+import thread381 from "../assets/threads/381.jpg";
+import thread380 from "../assets/threads/380.jpg";
+import thread379 from "../assets/threads/379.png";
+import thread378 from "../assets/threads/378.jpg";
+import thread377 from "../assets/threads/377.jpg";
+import thread376 from "../assets/threads/376.jpg";
+import thread375 from "../assets/threads/375.jpg";
+import thread374 from "../assets/threads/374.jpg";
+import thread373 from "../assets/threads/373.jpg";
+import thread372 from "../assets/threads/372.png";
+import thread371 from "../assets/threads/371.png";
+import thread370 from "../assets/threads/370.jpg";
+import thread369 from "../assets/threads/369.jpg";
+import thread368 from "../assets/threads/368.png";
+import thread367 from "../assets/threads/367.jpg";
+import thread366 from "../assets/threads/366.jpg";
+import thread365 from "../assets/threads/365.png";
+import thread364 from "../assets/threads/364.jpg";
+import thread363 from "../assets/threads/363.png";
+import thread362 from "../assets/threads/362.jpg";
+import thread361 from "../assets/threads/361.jpg";
+import thread360 from "../assets/threads/360.jpg";
+import thread359 from "../assets/threads/359.jpg";
+import thread358 from "../assets/threads/358.png";
+import thread357 from "../assets/threads/357.png";
+import thread356 from "../assets/threads/356.png";
+import thread355 from "../assets/threads/355.png";
+import thread354 from "../assets/threads/354.png";
+import thread353 from "../assets/threads/353.gif";
+import thread352 from "../assets/threads/352.png";
+import thread351 from "../assets/threads/351.png";
+import thread350 from "../assets/threads/350.jpg";
+import thread349 from "../assets/threads/349.png";
+import thread348 from "../assets/threads/348.png";
+import thread347 from "../assets/threads/347.png";
+import thread346 from "../assets/threads/346.png";
+import thread345 from "../assets/threads/345.jpg";
+import thread344 from "../assets/threads/344.png";
+import thread343 from "../assets/threads/343.jpg";
+import thread342 from "../assets/threads/342.png";
+import thread341 from "../assets/threads/341.png";
+import thread340 from "../assets/threads/340.jpg";
+import thread339 from "../assets/threads/339.png";
+import thread338 from "../assets/threads/338.png";
+import thread337 from "../assets/threads/337.png";
+import thread336 from "../assets/threads/336.png";
+import thread335 from "../assets/threads/335.png";
+import thread334 from "../assets/threads/334.png";
+
+const images = [
+  { img: thread382, thread_no: 382 },
+  { img: thread381, thread_no: 381 },
+  { img: thread380, thread_no: 380 },
+  { img: thread379, thread_no: 379 },
+  { img: thread378, thread_no: 378 },
+  { img: thread377, thread_no: 377 },
+  { img: thread376, thread_no: 376 },
+  { img: thread375, thread_no: 375 },
+  { img: thread374, thread_no: 374 },
+  { img: thread373, thread_no: 373 },
+  { img: thread372, thread_no: 372 },
+  { img: thread371, thread_no: 371 },
+  { img: thread370, thread_no: 370 },
+  { img: thread369, thread_no: 369 },
+  { img: thread368, thread_no: 368 },
+  { img: thread367, thread_no: 367 },
+  { img: thread366, thread_no: 366 },
+  { img: thread365, thread_no: 365 },
+  { img: thread364, thread_no: 364 },
+  { img: thread363, thread_no: 363 },
+  { img: thread362, thread_no: 362 },
+  { img: thread361, thread_no: 361 },
+  { img: thread360, thread_no: 360 },
+  { img: thread359, thread_no: 359 },
+  { img: thread358, thread_no: 358 },
+  { img: thread357, thread_no: 357 },
+  { img: thread356, thread_no: 356 },
+  { img: thread355, thread_no: 355 },
+  { img: thread354, thread_no: 354 },
+  { img: thread353, thread_no: 353 },
+  { img: thread352, thread_no: 352 },
+  { img: thread351, thread_no: 351 },
+  { img: thread350, thread_no: 350 },
+  { img: thread349, thread_no: 349 },
+  { img: thread348, thread_no: 348 },
+  { img: thread347, thread_no: 347 },
+  { img: thread346, thread_no: 346 },
+  { img: thread345, thread_no: 345 },
+  { img: thread344, thread_no: 344 },
+  { img: thread343, thread_no: 343 },
+  { img: thread342, thread_no: 342 },
+  { img: thread341, thread_no: 341 },
+  { img: thread340, thread_no: 340 },
+  { img: thread339, thread_no: 339 },
+  { img: thread338, thread_no: 338 },
+  { img: thread337, thread_no: 337 },
+  { img: thread336, thread_no: 336 },
+  { img: thread335, thread_no: 335 },
+  { img: thread334, thread_no: 334 },
+];
 ---
 
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="/css/lightgallery-bundle.min.css"
+/>
 <Layout title="Baltimare | Bans">
   <div
     class="w-5/6 lg:w-3/5 lg:my-0 my-8 p-4 lg:p-8 glass items-center justify-center text-black"
@@ -13,5 +121,101 @@ import Layout from "../layouts/Layout.astro";
         Gallery
       </div>
     </div>
+    <div id="lightgallery" class="overflow-y-scroll min-h-120 h-120 max-h-120 block w-full px-2 mt-4 text-center">
+    {
+      images.map(({ img, thread_no}, idx) => (
+        <div
+          class="inline-block p-2"
+          data-src={img.src}
+          data-sub-html={`<h1>Thread #${thread_no}</h1>`}
+        >
+          <a
+            class={`inline-block  duration-500 hover:scale-[1.1] ${
+              idx % 2 ? "hover:rotate-3" : "hover:-rotate-3"
+            }`}
+          >
+            <Image
+              id={`img-thread${thread_no}`}
+              src={img}
+              alt="thread"
+              height={80}
+              style="filter: drop-shadow(0 2px 2px #000);"
+              class="h-16 lg:h-16 xl:h-16 w-auto cursor-pointer rounded-lg "
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
   </div>
 </Layout>
+
+<script>
+  import tippy from "tippy.js";
+  import "tippy.js/dist/tippy.css";
+  import "tippy.js/themes/light.css";
+  import "tippy.js/animations/shift-away-extreme.css";
+  import lightGallery from "lightgallery";
+  import lgThumbnail from "lightgallery/plugins/thumbnail";
+  import lgZoom from "lightgallery/plugins/zoom";
+
+  document.addEventListener("astro:page-load", () => {
+    const gallery = document.getElementById("lightgallery");
+    if (gallery) {
+      lightGallery(gallery, {
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500,
+        licenseKey: import.meta.env.PUBLIC_KEY,
+        mobileSettings: {
+          controls: false,
+          showCloseIcon: true,
+          download: true,
+        },
+      });
+    }
+
+    const threads = Array.from({ length: 382 - 334 + 1 }, (_, index) => 334 + index);;
+    threads.forEach(t => {
+
+      const img = document.getElementById(`img-thread${t}`);
+
+      if (img) {
+        tippy(img, {
+          content: `Thread #${t}`,
+          placement: "top",
+          theme: "dark",
+          animation: "shift-away-extreme",
+        });
+      }
+    })
+  });
+</script>
+
+
+<style>
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  *::-webkit-scrollbar {
+    background-color: #999;
+    width: 8px;
+  }
+  
+  /* background of the scrollbar except button or resizer */
+  *::-webkit-scrollbar-track {
+    background-color: #999;
+    /* border-radius: 16px; */
+  }
+  
+  /* scrollbar itself */
+  *::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 16px;
+    border: 2px solid #999;
+  }
+  
+  /* set button(top and bottom of the scrollbar) */
+  *::-webkit-scrollbar-button {
+    display: none;
+  }
+  </style>
+  
