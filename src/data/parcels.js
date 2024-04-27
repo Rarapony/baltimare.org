@@ -1329,7 +1329,7 @@ export default [
       [150, 256],
       [150, 224],
     ],
-    img: `/threads/${images[~~(Math.random() * images.length)]}`,
+    img: `/threads/372.png`,
     teleport: [224, 58, 36],
     location: 'Baltimare',
   },
