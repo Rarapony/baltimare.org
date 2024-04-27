@@ -13,6 +13,8 @@ import parcels from "../data/parcels.js";
 import { Tippy } from "vue-tippy";
 import "tippy.js/dist/tippy.css";
 
+const show = ref(true);
+
 const $avatarPosBaltimare = useStore(avatarPosBaltimare);
 const $avatarPosHorseHeights = useStore(avatarPosHorseHeights);
 const $avatarPosObjBaltimare = useStore(avatarPosObjBaltimare);
