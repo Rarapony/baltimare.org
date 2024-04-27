@@ -414,7 +414,7 @@ export default [
       [256, 256],
       [256, 175],
     ],
-    img: "opg232.png",
+    img: "hoofball.jpg",
     teleport: [192, 216, 36],
     location: 'Baltimare',
   },

@@ -13,8 +13,6 @@ import parcels from "../data/parcels.js";
 import { Tippy } from "vue-tippy";
 import "tippy.js/dist/tippy.css";
 
-import axios from "axios";
-
 const $avatarPosBaltimare = useStore(avatarPosBaltimare);
 const $avatarPosHorseHeights = useStore(avatarPosHorseHeights);
 const $avatarPosObjBaltimare = useStore(avatarPosObjBaltimare);

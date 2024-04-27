@@ -25,6 +25,14 @@ const { pathname } = Astro.url;
       href="/faq">FAQ</a
     >
     <a
+      class={`hover:underline underline-offset-8 ${pathname === "/gallery" ? "underline" : null}`}
+      href="/gallery">Gallery</a
+    >
+    <a
+      class={`hover:underline underline-offset-8 ${pathname === "/bans" ? "underline" : null}`}
+      href="/bans">Bans</a
+    >
+    <a
       class={`hover:underline underline-offset-8 ${pathname === "/credits" ? "underline" : null}`}
       href="/credits">Credits</a
     >
