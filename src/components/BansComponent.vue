@@ -99,9 +99,10 @@ const getUTCTimestamp = (d) => {
     </table>
     <div
       v-else
-      class="text-4xl min-h-120 h-120 max-h-120 flex items-center justify-center font-medium"
+      class="text-2xl min-h-120 h-120 max-h-120 flex flex-col items-center justify-center font-medium"
     >
-      Loading...
+      <img class="max-w-80" src="../assets/twi.gif?url" />
+      <div class="my-4">Loading...</div>
     </div>
   </div>
 </template>
