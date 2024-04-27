@@ -30,7 +30,8 @@ const bgImages = [bgImage1, bgImage2, bgImage3].map(async (image) => {
 });
 
 const bgs = await Promise.all(bgImages);
-const randomIndex = ~~(Math.random() * bgs.length);
+// const randomIndex = ~~(Math.random() * bgs.length);
+const randomIndex = 0;
 const selectedBg = bgs[randomIndex];
 
 const card1Url = (await getImage({
