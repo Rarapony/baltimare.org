@@ -109,7 +109,7 @@ const teleportToUser = (user) => {
   >
     <a
       target="_blank"
-      href="https://boards.4chan.org/mlp/thread/41026390"
+      href="https://boards.4chan.org/mlp/thread/41032359"
       class="w-full flex flex-col items-center justify-center cursor-pointer hover:opacity-40 duration-300"
     >
       <div
@@ -269,10 +269,10 @@ const teleportToUser = (user) => {
             </div>
             <a
               style="filter: drop-shadow(0 1px 1px #000)"
-              :href="`secondlife://BALTIMARE/${parcel?.teleport?.[0] || 0}/${
+              :href="`secondlife://${parcel.location.toUpperCase()}/${parcel?.teleport?.[0] || 0}/${
                 parcel?.teleport?.[1] || 0
               }/${parcel?.teleport?.[2] || 0}`"
-              class="text-xl tracking-wide rounded bg-blue-400 hover:bg-blue-600 duration-200 text-center mx-auto px-3 py-1 uppercase text-white cursor-pointer"
+              :class="`text-xl tracking-wide rounded bg-blue-400 hover:bg-blue-600 duration-200 text-center mx-auto px-3 py-1 uppercase text-white cursor-pointer`"
             >
               Teleport here
             </a>

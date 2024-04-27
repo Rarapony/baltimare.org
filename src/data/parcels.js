@@ -447,7 +447,7 @@ export default [
       [64, 0],
     ],
     img: 'opg356.png',
-    teleport: [33, 225, 36],
+    teleport: [64, 63, 46],
     location: 'Horse Heights',
   },
   {
@@ -463,7 +463,7 @@ export default [
       [64, 68],
     ],
     img: 'opg356.png',
-    teleport: [33, 225, 36],
+    teleport: [64, 130, 46],
     location: 'Horse Heights',
   },
   {
@@ -479,7 +479,7 @@ export default [
       [32, 136],
     ],
     img: 'opg356.png',
-    teleport: [33, 225, 36],
+    teleport: [32, 174, 46],
     location: 'Horse Heights',
   },
   {
@@ -495,7 +495,7 @@ export default [
       [32, 176],
     ],
     img: 'opg356.png',
-    teleport: [33, 225, 36],
+    teleport: [32, 214, 46],
     location: 'Horse Heights',
   },
   {
@@ -511,7 +511,7 @@ export default [
       [32, 216],
     ],
     img: 'opg356.png',
-    teleport: [33, 225, 36],
+    teleport: [33, 218, 46],
     location: 'Horse Heights',
   },
   {
@@ -527,7 +527,7 @@ export default [
       [72, 224],
     ],
     img: 'opg356.png',
-    teleport: [33, 225, 36],
+    teleport: [70, 224, 46],
     location: 'Horse Heights',
   },
   {
@@ -543,7 +543,7 @@ export default [
       [112, 224],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [110, 224, 46],
     location: 'Horse Heights',
   },
   {
@@ -559,7 +559,7 @@ export default [
       [96, 0],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [66, 40, 46],
     location: 'Horse Heights',
   },
   {
@@ -575,7 +575,7 @@ export default [
       [128, 0],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [97, 40, 46],
     location: 'Horse Heights',
   },
   {
@@ -591,7 +591,7 @@ export default [
       [160, 0],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [129, 40, 46],
     location: 'Horse Heights',
   },
   {
@@ -607,7 +607,7 @@ export default [
       [96, 52],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [95, 52, 46],
     location: 'Horse Heights',
   },
   {
@@ -623,7 +623,7 @@ export default [
       [116, 52],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [114, 52, 46],
     location: 'Horse Heights',
   },
   {
@@ -639,7 +639,7 @@ export default [
       [136, 52],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [134, 52, 46],
     location: 'Horse Heights',
   },
   {
@@ -655,7 +655,7 @@ export default [
       [132, 88],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [113, 133, 46],
     location: 'Horse Heights',
   },
   {
@@ -671,7 +671,7 @@ export default [
       [64, 148],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [62, 148, 46],
     location: 'Horse Heights',
   },
   {
@@ -687,7 +687,7 @@ export default [
       [84, 148],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [82, 148, 46],
     location: 'Horse Heights',
   },
   {
@@ -703,7 +703,7 @@ export default [
       [104, 148],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [103, 148, 46],
     location: 'Horse Heights',
   },
   {
@@ -719,7 +719,7 @@ export default [
       [64, 180],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [46, 212, 46],
     location: 'Horse Heights',
   },
   {
@@ -735,7 +735,7 @@ export default [
       [84, 180],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [66, 212, 46],
     location: 'Horse Heights',
   },
   {
@@ -751,7 +751,7 @@ export default [
       [104, 180],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [86, 212, 46],
     location: 'Horse Heights',
   },
   {
@@ -759,7 +759,7 @@ export default [
     type: "parcel",
     name: "siliconskies's House",
     owner: "siliconskies",
-    rent: 467,
+    rent: 93,
     coords: [
       [240, 156],
       [240, 172],
@@ -767,7 +767,7 @@ export default [
       [256, 156],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [254, 156, 36],
     location: 'Horse Heights',
   },
   {
@@ -775,7 +775,7 @@ export default [
     type: "parcel",
     name: "Wolvan's House",
     owner: "Wolvan",
-    rent: 467,
+    rent: 93,
     coords: [
       [224, 156],
       [224, 172],
@@ -783,7 +783,7 @@ export default [
       [240, 156],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [239, 156, 36],
     location: 'Horse Heights',
   },
   {
@@ -791,7 +791,7 @@ export default [
     type: "parcel",
     name: "kumikoshy's House",
     owner: "kumikoshy",
-    rent: 467,
+    rent: 94,
     coords: [
       [240, 136],
       [240, 152],
@@ -799,7 +799,7 @@ export default [
       [256, 136],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [241, 152, 36],
     location: 'Horse Heights',
   },
   {
@@ -807,7 +807,7 @@ export default [
     type: "parcel",
     name: "Kezter's House",
     owner: "Kezter",
-    rent: 467,
+    rent: 93,
     coords: [
       [224, 136],
       [224, 152],
@@ -815,7 +815,7 @@ export default [
       [240, 136],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [225, 152, 36],
     location: 'Horse Heights',
   },
   {
@@ -823,7 +823,7 @@ export default [
     type: "parcel",
     name: "SierraThePony's House",
     owner: "SierraThePony",
-    rent: 467,
+    rent: 93,
     coords: [
       [240, 116],
       [240, 132],
@@ -831,7 +831,7 @@ export default [
       [256, 116],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [255, 116, 36],
     location: 'Horse Heights',
   },
   {
@@ -847,7 +847,7 @@ export default [
       [240, 116],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [239, 116, 36],
     location: 'Horse Heights',
   },
   {
@@ -863,7 +863,7 @@ export default [
       [256, 192],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [254, 192, 36],
     location: 'Horse Heights',
   },
   {
@@ -879,7 +879,7 @@ export default [
       [244, 236],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [243, 235, 46],
     location: 'Horse Heights',
   },
   {
@@ -895,7 +895,7 @@ export default [
       [212, 236],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [210, 235, 46],
     location: 'Horse Heights',
   },
   {
@@ -911,7 +911,7 @@ export default [
       [152, 152],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [152, 170, 36],
     location: 'Horse Heights',
   },
   {
@@ -927,7 +927,7 @@ export default [
       [152, 172],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [152, 190, 36],
     location: 'Horse Heights',
   },
   {
@@ -959,7 +959,7 @@ export default [
       [232, 192],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [232, 207, 36],
     location: 'Horse Heights',
   },
   {
@@ -975,7 +975,7 @@ export default [
       [216, 192],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [200, 193, 36],
     location: 'Horse Heights',
   },
   {
@@ -991,7 +991,7 @@ export default [
       [232, 208],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [232, 223, 36],
     location: 'Horse Heights',
   },
   {
@@ -999,7 +999,7 @@ export default [
     type: "parcel",
     name: "OrionTheUnicorn's House",
     owner: "OrionTheUnicorn",
-    rent: 467,
+    rent: 93,
     coords: [
       [200, 208],
       [200, 224],
@@ -1007,7 +1007,7 @@ export default [
       [216, 208],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [200, 209, 36],
     location: 'Horse Heights',
   },
   {
@@ -1023,7 +1023,7 @@ export default [
       [180, 192],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [179, 192, 36],
     location: 'Horse Heights',
   },
   {
@@ -1039,7 +1039,7 @@ export default [
       [196, 192],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [194, 192, 36],
     location: 'Horse Heights',
   },
   {
@@ -1055,7 +1055,7 @@ export default [
       [180, 164],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [164, 165, 36],
     location: 'Horse Heights',
   },
   {
@@ -1071,7 +1071,7 @@ export default [
       [200, 148],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [182, 180, 36],
     location: 'Horse Heights',
   },
   {
@@ -1087,7 +1087,7 @@ export default [
       [220, 148],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [201, 180, 36],
     location: 'Horse Heights',
   },
   {
@@ -1103,7 +1103,7 @@ export default [
       [200, 116],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [198, 116, 36],
     location: 'Horse Heights',
   },
   {
@@ -1111,7 +1111,7 @@ export default [
     type: "parcel",
     name: "LittleBolt's House",
     owner: "LittleBolt",
-    rent: 467,
+    rent: 234,
     coords: [
       [200, 116],
       [200, 148],
@@ -1119,7 +1119,7 @@ export default [
       [220, 116],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [218, 116, 36],
     location: 'Horse Heights',
   },
   {
@@ -1127,7 +1127,7 @@ export default [
     type: "parcel",
     name: "flowerpone's House",
     owner: "flowerpone",
-    rent: 467,
+    rent: 234,
     coords: [
       [180, 84],
       [180, 104],
@@ -1135,7 +1135,7 @@ export default [
       [212, 84],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [182, 104, 36],
     location: 'Horse Heights',
   },
   {
@@ -1151,7 +1151,7 @@ export default [
       [196, 68],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [195, 68, 36],
     location: 'Horse Heights',
   },
   {
@@ -1167,7 +1167,7 @@ export default [
       [212, 68],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [210, 68, 36],
     location: 'Horse Heights',
   },
   {
@@ -1183,7 +1183,7 @@ export default [
       [240, 72],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [224, 73, 36],
     location: 'Horse Heights',
   },
   {
@@ -1199,7 +1199,7 @@ export default [
       [240, 56],
     ],
     img: 'opg356.png',
-    teleport: [0, 0, 0],
+    teleport: [224, 58, 36],
     location: 'Horse Heights',
   },
 ];
