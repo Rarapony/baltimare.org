@@ -437,8 +437,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Ebonyglow's House",
+    owner: "Ebonyglow",
     rent: 467,
     coords: [
       [0, 0],
@@ -453,8 +453,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Xipsyl Vermilion's House",
+    owner: "Xipsyl Vermilion",
     rent: 1495,
     coords: [
       [0, 68],
@@ -533,8 +533,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "darlingdeer's House",
+    owner: "darlingdeer",
     rent: 467,
     coords: [
       [72, 224],
@@ -549,8 +549,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "harmonymickain's House",
+    owner: "harmonymickain",
     rent: 467,
     coords: [
       [64, 0],
@@ -565,8 +565,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Ponifex's House",
+    owner: "Ponifex",
     rent: 467,
     coords: [
       [96, 0],
@@ -581,8 +581,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "malicestriker's House",
+    owner: "malicestriker",
     rent: 467,
     coords: [
       [128, 0],
@@ -597,9 +597,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "StaffieHewf's House",
+    owner: "StaffieHewf",
+    rent: 234,
     coords: [
       [76, 52],
       [76, 84],
@@ -613,9 +613,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "TrashSpaghetti's House",
+    owner: "TrashSpaghetti",
+    rent: 234,
     coords: [
       [96, 52],
       [96, 84],
@@ -629,9 +629,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "russetpony's House",
+    owner: "russetpony",
+    rent: 234,
     coords: [
       [116, 52],
       [116, 84],
@@ -645,8 +645,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "SassyXS's House",
+    owner: "SassyXS",
     rent: 467,
     coords: [
       [100, 88],
@@ -661,9 +661,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "GLaDOS9000's House",
+    owner: "GLaDOS9000",
+    rent: 234,
     coords: [
       [44, 148],
       [44, 180],
@@ -677,9 +677,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "Blinkc0re's House",
+    owner: "Blinkc0re",
+    rent: 234,
     coords: [
       [64, 148],
       [64, 180],
@@ -693,9 +693,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "presentfactory's House",
+    owner: "presentfactory",
+    rent: 234,
     coords: [
       [84, 148],
       [84, 180],
@@ -709,8 +709,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "mageenjoyer's House",
+    owner: "mageenjoyer",
     rent: 467,
     coords: [
       [44, 180],
@@ -725,8 +725,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "N/A's House",
+    owner: "N/A",
     rent: 467,
     coords: [
       [64, 180],
@@ -741,8 +741,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "starcasteclipse's House",
+    owner: "starcasteclipse",
     rent: 467,
     coords: [
       [84, 180],
@@ -757,8 +757,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "siliconskies's House",
+    owner: "siliconskies",
     rent: 467,
     coords: [
       [240, 156],
@@ -773,8 +773,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Wolvan's House",
+    owner: "Wolvan",
     rent: 467,
     coords: [
       [224, 156],
@@ -789,8 +789,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "kumikoshy's House",
+    owner: "kumikoshy",
     rent: 467,
     coords: [
       [240, 136],
@@ -805,8 +805,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Kezter's House",
+    owner: "Kezter",
     rent: 467,
     coords: [
       [224, 136],
@@ -821,8 +821,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "SierraThePony's House",
+    owner: "SierraThePony",
     rent: 467,
     coords: [
       [240, 116],
@@ -837,8 +837,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "alphonsedev's House",
+    owner: "alphonsedev",
     rent: 467,
     coords: [
       [224, 116],
@@ -853,8 +853,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "rainy.evergreen's House",
+    owner: "rainy.evergreen",
     rent: 467,
     coords: [
       [236, 192],
@@ -869,8 +869,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Lullaybat's House",
+    owner: "Lullaybat",
     rent: 467,
     coords: [
       [212, 236],
@@ -885,8 +885,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Vulneria's House",
+    owner: "Vulneria",
     rent: 467,
     coords: [
       [180, 236],
@@ -901,8 +901,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Silfrvind Voxel's House",
+    owner: "Silfrvind Voxel",
     rent: 467,
     coords: [
       [120, 152],
@@ -917,8 +917,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "sleepyhoers's House",
+    owner: "sleepyhoers",
     rent: 467,
     coords: [
       [120, 172],
@@ -949,8 +949,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Desudesudesuka's House",
+    owner: "Desudesudesuka",
     rent: 467,
     coords: [
       [216, 192],
@@ -965,8 +965,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Fish Costanza's House",
+    owner: "Fish Costanza",
     rent: 467,
     coords: [
       [200, 192],
@@ -981,8 +981,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "Gerael's House",
+    owner: "Gerael",
     rent: 467,
     coords: [
       [216, 208],
@@ -997,8 +997,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "OrionTheUnicorn's House",
+    owner: "OrionTheUnicorn",
     rent: 467,
     coords: [
       [200, 208],
@@ -1013,9 +1013,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "GhostyGlue's House",
+    owner: "GhostyGlue",
+    rent: 93,
     coords: [
       [164, 192],
       [164, 208],
@@ -1029,9 +1029,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "Blackyhat45's House",
+    owner: "Blackyhat45",
+    rent: 93,
     coords: [
       [180, 192],
       [180, 208],
@@ -1045,9 +1045,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "failedfetus's House",
+    owner: "failedfetus",
+    rent: 93,
     coords: [
       [164, 164],
       [164, 180],
@@ -1061,8 +1061,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "jath.andel's House",
+    owner: "jath.andel",
     rent: 467,
     coords: [
       [180, 148],
@@ -1077,8 +1077,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "p0nut's House",
+    owner: "p0nut",
     rent: 467,
     coords: [
       [200, 148],
@@ -1093,8 +1093,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "wishhead's House",
+    owner: "wishhead",
     rent: 467,
     coords: [
       [180, 116],
@@ -1109,8 +1109,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "LittleBolt's House",
+    owner: "LittleBolt",
     rent: 467,
     coords: [
       [200, 116],
@@ -1125,8 +1125,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "flowerpone's House",
+    owner: "flowerpone",
     rent: 467,
     coords: [
       [180, 84],
@@ -1141,8 +1141,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "gigamare's House",
+    owner: "gigamare",
     rent: 467,
     coords: [
       [180, 68],
@@ -1157,8 +1157,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
+    name: "puppidoq's House",
+    owner: "puppidoq",
     rent: 467,
     coords: [
       [196, 68],
@@ -1173,9 +1173,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "Pumpkin Twist's House",
-    owner: "Pumpkin Twist",
-    rent: 467,
+    name: "PumpkinTwist's House",
+    owner: "PumpkinTwist",
+    rent: 93,
     coords: [
       [224, 72],
       [224, 88],
@@ -1189,9 +1189,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "?'s House",
-    owner: "?",
-    rent: 467,
+    name: "alurh's House",
+    owner: "alurh",
+    rent: 93,
     coords: [
       [224, 56],
       [224, 72],
