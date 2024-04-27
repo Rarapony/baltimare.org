@@ -338,7 +338,7 @@ const teleportToUser = (user) => {
       <div
         v-if="$avatarPos.length"
       >
-      <div v-if="$avatarPos.length > 40" class="max-w-120 columns-2">
+      <div v-if="$avatarPos.length > 40" class="w-120 columns-2">
         <div
           v-for="(user, idx) in $avatarPos.filter(
             (u) =>
