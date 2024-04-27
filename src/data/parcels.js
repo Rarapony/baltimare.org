@@ -1,5 +1,5 @@
 const images = [
-  "300.jpg", "301.jpg", "302.png", "303.jpg", "304.png",
+  "300.jpg", "301.jpg", "302.png",  "304.png",
   "305.jpg", "306.png", "307.jpg", "308.png", "309.png",
   "310.jpg", "311.jpg", "312.jpg", "313.png", "314.jpg",
   "315.png", "316.png", "317.jpg", "318.png", "319.jpg",
