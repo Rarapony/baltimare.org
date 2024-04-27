@@ -37,6 +37,20 @@ const $avatarPos = computed(() => {
     );
 });
 
+const sortedAvatarPos = computed(() => {
+  return $avatarPos.value
+    .sort((x, y) =>
+      x.display_name.toUpperCase() < y.display_name.toUpperCase()
+        ? -1
+        : x.display_name.toUpperCase() > y.display_name.toUpperCase()
+        ? 1
+        : 0
+    )
+    .filter(
+      (u) => u.display_name !== "BaltiMare" && u.display_name !== "Builder Pony"
+    );
+});
+
 // const $avatarPosObj = computed(() => ({
 //   ...$avatarPosObjBaltimare.value,
 //   ...$avatarPosObjHorseHeights.value,
@@ -284,7 +298,7 @@ const teleportToUser = (user) => {
             <div class="mt-4 grid grid-cols-5 gap-x-6 gap-y-0">
               <div
                 class="flex gap-x-1 items-center whitespace-nowrap"
-                v-for="user in $avatarPos.filter(
+                v-for="user in sortedAvatarPos.filter(
                   (u) =>
                     u.user_position[0] >= parcel.coords[0][0] &&
                     u.user_position[0] <= parcel.coords[3][0] &&
@@ -345,19 +359,7 @@ const teleportToUser = (user) => {
       <div v-if="$avatarPos.length">
         <div v-if="$avatarPos.length > 40" class="min-w-120 w-120 columns-2">
           <div
-            v-for="(user, idx) in $avatarPos
-              .sort((x, y) =>
-                x.display_name.toUpperCase() < y.display_name.toUpperCase()
-                  ? -1
-                  : x.display_name.toUpperCase() > y.display_name.toUpperCase()
-                  ? 1
-                  : 0
-              )
-              .filter(
-                (u) =>
-                  u.display_name !== 'BaltiMare' &&
-                  u.display_name !== 'Builder Pony'
-              )"
+            v-for="(user, idx) in sortedAvatarPos"
             @mouseover="magnify(user)"
             @mouseout="demagnify(user)"
             class="hidden lg:block w-full"
