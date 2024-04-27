@@ -337,10 +337,8 @@ const teleportToUser = (user) => {
       </div>
       <div
         v-if="$avatarPos.length"
-        :class="`${
-          $avatarPos.length > 40 ? 'max-w-120 columns-2' : 'w-64 columns-1'
-        }`"
       >
+      <div v-if="$avatarPos.length > 40" class="max-w-120 columns-2">
         <div
           v-for="(user, idx) in $avatarPos.filter(
             (u) =>
@@ -365,11 +363,37 @@ const teleportToUser = (user) => {
           </div>
         </div>
       </div>
+      <div v-else class="w-64 columns-1">
+        <div
+          v-for="(user, idx) in $avatarPos.filter(
+            (u) =>
+              u.display_name !== 'BaltiMare' &&
+              u.display_name !== 'Builder Pony'
+          )"
+          @mouseover="magnify(user)"
+          @mouseout="demagnify(user)"
+          class="hidden lg:block w-full"
+        >
+          <div
+            class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-pointer font-medium gap-x-2 flex items-center justify-start"
+          >
+            <img
+              :src="user.pfp"
+              class="w-4 h-4 rounded"
+              onerror="this.src='/twi.png'"
+            />
+            <span class="text-xs lg:text-sm font-medium">
+              {{ user.display_name.replace(" Resident", "") }}
+            </span>
+          </div>
+        </div>
+      </div>
+      </div>
       <div
         v-else
         class="min-h-80 flex flex-col items-center justify-center text-center"
       >
-        <img src="../assets/twi.gif?url" />
+        <img class="max-w-80" src="../assets/twi.gif?url" />
         <div class="text-center mt-1 text-lg">Loading users...</div>
       </div>
     </div>
