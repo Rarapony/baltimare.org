@@ -270,7 +270,17 @@ function dragElement(elmnt) {
               }
         "
         @click="openDialog(parcel.name)"
-      ></div>
+      >
+      
+      <Tippy
+          :content="`<div class='text-center'><h1 class='text-base font-medium'>${parcel.name}</h1><h6 class='text-xs'>Owned by <span class='font-semibold'>${parcel.owner}</span></h6></div>`"
+          :allowHTML="true"
+          :placement="'right'"
+        > <div class="w-full h-full">
+          
+        </div>
+          </Tippy>
+      </div>
       <dialog
         :style="{ 'font-family': 'Poppins' }"
         class="p-0 cursor-default max-h-screen overflow-hidden"
