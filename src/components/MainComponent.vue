@@ -245,7 +245,7 @@ function dragElement(elmnt) {
       </div>
       <div
         v-for="parcel in parcels"
-        :class="`cursor-pointer bg-white opacity-50 hover:opacity-90 border border-black absolute rounded duration-300`"
+        :class="`cursor-pointer bg-white opacity-50 hover:opacity-90 border border-gray-400 absolute duration-300`"
         :style="
           parcel.location === 'Baltimare'
             ? {
