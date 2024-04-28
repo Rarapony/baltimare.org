@@ -1,151 +1,180 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import rarapony from "../assets/credits/00_-_Rarapony.png";
+import neri from "../assets/credits/84_-_Neri.png";
+import alpharush from "../assets/credits/92_-_Alpha_Rush.png";
+import flutterbutter from "../assets/credits/27_-_Flutterbutter.png";
+import kuro from "../assets/credits/72_-_Kuro.png";
+import tealove from "../assets/credits/14_-_Tea_Love.png";
+import marble from "../assets/credits/00_-_Rarapony.png";
+import boggy from "../assets/credits/50_-_Boggy.png";
+import quote from "../assets/credits/108_-_Quote_Unquote.png";
+import izzy from "../assets/credits/00_-_Rarapony.png";
+import tenfive from "../assets/credits/00_-_Rarapony.png";
+import amblearbiter from "../assets/credits/117_-_Amble_Arbiter.png";
 ---
 
 <Layout title="Baltimare | Credits">
   <div
-    class="w-5/6 lg:w-3/5 lg:my-0 my-8 p-4 lg:p-8 glass items-center justify-center text-black"
+    class="w-5/6 lg:w-3/5 lg:my-0 my-8 p-4 lg:px-8 glass items-center justify-center text-black"
   >
-    <div class="mb-4">
+    <!-- <div class="mb-4">
       <div class="text-center uppercase text-4xl lg:text-8xl font-semibold tracking-wide">
         Credits
       </div>
-    </div>
+    </div> -->
     <div class="my-1">
       <div
-        class="text-center text-base lg:text-3xl font-semibold my-2 uppercase tracking-wide"
+        class="text-center text-base lg:text-2xl font-semibold my-2 uppercase tracking-wide"
       >
         Staff
       </div>
-      <div class="my-1 grid grid-cols-2 lg:grid-cols-2 gap-x-2 lg:gap-x-8 gap-y-1">
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Rarapony</div>
-            <div class="text-xs lg:text-lg">Owner</div>
+      <div class="my-1 grid grid-cols-2 lg:grid-cols-4 gap-x-2 lg:gap-x-8 gap-y-1">
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={rarapony} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Rarapony</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Owner</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Neri</div>
-            <div class="text-xs lg:text-lg">Janny</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={neri} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Neri</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Janny</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Alpha Rush</div>
-            <div class="text-xs lg:text-lg">Janny</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={alpharush} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Alpha Rush</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Janny</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Flutterbutter</div>
-            <div class="text-xs lg:text-lg">Janny</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={flutterbutter} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Flutterbutter</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Janny</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Kuro</div>
-            <div class="text-xs lg:text-lg">Janny</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={kuro} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Kuro</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Janny</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Tea Love</div>
-            <div class="text-xs lg:text-lg">Janny</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={tealove} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Tea Love</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Janny</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">MarbIe</div>
-            <div class="text-xs lg:text-lg">Janny</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={marble} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Marble</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Janny</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Boggy</div>
-            <div class="text-xs lg:text-lg">Janny</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={boggy} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Boggy</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Janny</div>
           </div>
         </div>
       </div>
     </div>
     <div class="my-1">
       <div
-        class="text-center text-base lg:text-3xl font-semibold my-2 uppercase tracking-wide"
+        class="text-center text-base lg:text-2xl font-semibold my-2 uppercase tracking-wide"
       >
         Special Thanks
       </div>
-      <div class="my-1 grid grid-cols-2 lg:grid-cols-2 gap-x-2 lg:gap-x-8 gap-y-1">
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Neri</div>
-            <div class="text-xs lg:text-lg">Events coordinator</div>
+      <div class="my-1 grid grid-cols-2 lg:grid-cols-4 gap-x-2 lg:gap-x-8 gap-y-1">
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={neri} alt="Neri" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Neri</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Events coordinator</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Quote Unquote</div>
-            <div class="text-xs lg:text-lg">Sim layout and design</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={quote} alt="Quote Unquote" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Quote Unquote</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Sim layout and design</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Izzy</div>
-            <div class="text-xs lg:text-lg">Open Pony models</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={izzy} alt="Izzy" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Izzy</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Open Pony models</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Tea Love</div>
-            <div class="text-xs lg:text-lg">Sim layout and design</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={tealove} alt="Tea Love" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Tea Love</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Sim layout and design</div>
           </div>
         </div>
       </div>
     </div>
     <div class="my-1">
       <div
-        class="text-center text-base lg:text-3xl font-semibold my-2 uppercase tracking-wide"
+        class="text-center text-base lg:text-2xl font-semibold my-2 uppercase tracking-wide"
       >
         Website
       </div>
-      <div class="my-1 grid grid-cols-2 lg:grid-cols-2 gap-x-2 lg:gap-x-8 gap-y-1">
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">15</div>
-            <div class="text-xs lg:text-lg">Full-stack development</div>
+      <div class="my-1 grid grid-cols-2 lg:grid-cols-4 gap-x-2 lg:gap-x-8 gap-y-1">
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={tenfive} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">15</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Full-stack development</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Rarapony</div>
-            <div class="text-xs lg:text-lg">Backend development</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={rarapony} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Rarapony</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Backend development</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">MarbIe</div>
-            <div class="text-xs lg:text-lg">Art assets</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={marble} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Marble</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Art assets</div>
           </div>
         </div>
-        <div class="flex items-center gap-x-2 lg:gap-x-4">
-          <img src="/twi.png" width="48" height="48" class="rounded-lg" />
-          <div class="flex flex-col text-left">
-            <div class="text-sm lg:text-2xl font-semibold -mb-1 whitespace-nowrap">Amble Arbiter</div>
-            <div class="text-xs lg:text-lg">Art assets</div>
+        <div class="flex flex-col items-center gap-x-2 lg:gap-x-4">
+          <Image src={amblearbiter} alt="Rarapony" width="200" class="rounded-lg" 
+          style="filter: drop-shadow(0 2px 2px #000)" />
+          <div class="flex flex-col text-center">
+            <div class="text-sm lg:text-xl font-semibold -mb-1 whitespace-nowrap">Amble Arbiter</div>
+            <div class="text-xs lg:text-sm whitespace-nowrap">Art assets</div>
           </div>
         </div>
       </div>
