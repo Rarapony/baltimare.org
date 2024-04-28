@@ -761,8 +761,8 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "Starcast Eclipse's House",
-    owner: "Starcast Eclipse",
+    name: "Rosy Scribbles's House",
+    owner: "Rosy Scribbles",
     rent: 467,
     coords: [
       [84, 180],
@@ -770,7 +770,7 @@ export default [
       [104, 212],
       [104, 180],
     ],
-    img: `/threads/${images[~~(Math.random() * images.length)]}`,
+    img: `/parcels/rosy.png`,
     teleport: [86, 212, 46],
     location: 'Horse Heights',
   },
