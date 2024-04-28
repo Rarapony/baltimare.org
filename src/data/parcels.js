@@ -21,8 +21,8 @@ const images = [
 export default [
   {
     type: "parcel",
-    name: "Marble Pie's House",
-    owner: "Marble Pie",
+    name: "Marble's House",
+    owner: "Marble",
     rent: 702,
     coords: [
       [0, 0],

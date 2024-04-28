@@ -276,8 +276,8 @@ function dragElement(elmnt) {
           :content="`<div class='text-center'><h1 class='text-base font-medium'>${parcel.name}</h1><h6 class='text-xs'>Owned by <span class='font-semibold'>${parcel.owner}</span></h6></div>`"
           :allowHTML="true"
           :placement="'right'"
-        > <div class="w-full h-full">
-          
+        > <div :class="`${parcel.coords[3][0] - parcel.coords[0][0] < parcel.coords[1][1] - parcel.coords[0][1] ? '-rotate-45' : 'rotate-0'} w-full h-full text-[0.7rem] font-semibold text-black  opacity-100 flex items-center justify-center whitespace-nowrap`">
+          {{ parcel.coords[3][0] - parcel.coords[0][0] > 40 ? parcel.name : null }}
         </div>
           </Tippy>
       </div>
