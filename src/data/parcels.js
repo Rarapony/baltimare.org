@@ -22,6 +22,7 @@ export default [
   {
     type: "parcel",
     name: "Marble's House",
+    label: "Marble",
     owner: "Marble",
     rent: 702,
     coords: [
@@ -37,6 +38,7 @@ export default [
   {
     type: "parcel",
     name: "ღIndigo Hollowheartღ's House",
+    label: "",
     owner: "ღIndigo Hollowheartღ",
     rent: 468,
     coords: [
@@ -52,6 +54,7 @@ export default [
   {
     type: "parcel",
     name: "Lampwick's House",
+    label: "",
     owner: "Lampwick",
     rent: 352,
     coords: [
@@ -67,6 +70,7 @@ export default [
   {
     type: "parcel",
     name: "Wild Card's House",
+    label: "Wild Card",
     owner: "Wild Card",
     rent: 352,
     coords: [
@@ -82,6 +86,7 @@ export default [
   {
     type: "parcel",
     name: "ღBountiful Hollowheartღ's House",
+    label: "",
     owner: "ღBountiful Hollowheartღ",
     rent: 468,
     coords: [
@@ -157,6 +162,7 @@ export default [
   {
     type: "parcel",
     name: "trixieshy's House",
+    label: "trixieshy",
     owner: "trixieshy",
     rent: 374,
     coords: [
@@ -172,6 +178,7 @@ export default [
   {
     type: "parcel",
     name: "HereToHorse's House",
+    label: "HereToHorse",
     owner: "HereToHorse",
     rent: 374,
     coords: [
@@ -394,6 +401,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Red's House",
+    label: "Red",
     owner: "Red",
     rent: 187,
     coords: [
@@ -410,6 +418,7 @@ export default [
     parcelID: "",
     type: "hangout",
     name: "The Hangout",
+    label: "The Hangout",
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -426,6 +435,7 @@ export default [
     parcelID: "",
     type: "stadium",
     name: "Baltimare Stadium",
+    label: "Baltimare Stadium",
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -442,6 +452,7 @@ export default [
     parcelID: "",
     type: "hangout",
     name: "The Campfire",
+    label: "The Campfire",
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -458,6 +469,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Ebonyglow's House",
+    label: "Ebonyglow",
     owner: "Ebonyglow",
     rent: 467,
     coords: [
@@ -474,6 +486,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Xipsyl's House",
+    label: "Xipsyl",
     owner: "Xipsyl",
     rent: 1495,
     coords: [
@@ -490,6 +503,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Sky Line's House",
+    label: "Sky Line",
     owner: "Sky Line",
     rent: 467,
     coords: [
@@ -506,6 +520,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "15's House",
+    label: "15",
     owner: "15",
     rent: 467,
     coords: [
@@ -522,6 +537,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Albatross's House",
+    label: "Albatross",
     owner: "Albatross",
     rent: 467,
     coords: [
@@ -538,6 +554,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Mister Bones's House",
+    label: "Mister Bones",
     owner: "Mister Bones",
     rent: 467,
     coords: [
@@ -554,6 +571,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Midnight Wishes's House",
+    label: "Midnight Wishes",
     owner: "Midnight Wishes",
     rent: 467,
     coords: [
@@ -890,6 +908,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Grey's House",
+    label: "Grey",
     owner: "Grey",
     rent: 467,
     coords: [
@@ -906,6 +925,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Neri's House",
+    label: "Neri",
     owner: "Neri",
     rent: 467,
     coords: [
@@ -922,6 +942,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Silver Wind's House",
+    label: "",
     owner: "Silver Wind",
     rent: 467,
     coords: [
@@ -938,6 +959,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "sleepyhoers's House",
+    label: "",
     owner: "sleepyhoers",
     rent: 467,
     coords: [
@@ -950,22 +972,23 @@ export default [
     teleport: [152, 190, 36],
     location: 'Horse Heights',
   },
-  {
-    parcelID: "",
-    type: "parcel",
-    name: "Party House",
-    owner: "Rarapony",
-    rent: Infinity,
-    coords: [
-      [90, 110],
-      [90, 145],
-      [140, 145],
-      [140, 110],
-    ],
-    img: 'apr26party.png',
-    teleport: [105, 123, 1819],
-    location: 'Baltimare',
-  },
+  // {
+  //   parcelID: "",
+  //   type: "parcel",
+  //   name: "Party House",
+  //   label: "Party House",
+  //   owner: "Rarapony",
+  //   rent: Infinity,
+  //   coords: [
+  //     [90, 110],
+  //     [90, 145],
+  //     [140, 145],
+  //     [140, 110],
+  //   ],
+  //   img: 'apr26party.png',
+  //   teleport: [105, 123, 1819],
+  //   location: 'Baltimare',
+  // },
   {
     parcelID: "",
     type: "parcel",
@@ -1321,6 +1344,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Baltimare Church",
+    label: "The Church",
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1337,6 +1361,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "The Stage",
+    label: "The Stage",
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1345,7 +1370,7 @@ export default [
       [80, 146],
       [80, 114],
     ],
-    img: `/threads/${images[~~(Math.random() * images.length)]}`,
+    img: `/parcels/thestage.png`,
     teleport: [70, 150, 38],
     location: 'Baltimare',
   },
@@ -1353,6 +1378,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Horse Heights Sign",
+    label: "Horse Heights Sign",
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1369,6 +1395,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "The Lighthouse",
+    label: "The Lighthouse",
     owner: "Rarapony",
     rent: Infinity,
     coords: [
