@@ -60,7 +60,7 @@ updateData();
 
 onMounted(() => {
   updateData();
-  
+
   dragElement(document.getElementById("mydiv"));
 });
 
@@ -105,10 +105,12 @@ const teleportToUser = (user) => {
   window.location.href = URL;
 };
 
-
 function dragElement(elmnt) {
-  console.log(elmnt)
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  console.log(elmnt);
+  var pos1 = 0,
+    pos2 = 0,
+    pos3 = 0,
+    pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
     // if present, the header is where you move the DIV from:
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
@@ -137,8 +139,8 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+    elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
   }
 
   function closeDragElement() {
@@ -271,16 +273,27 @@ function dragElement(elmnt) {
         "
         @click="openDialog(parcel.name)"
       >
-      
-      <Tippy
+        <Tippy
           :content="`<div class='text-center'><h1 class='text-base font-medium'>${parcel.name}</h1><h6 class='text-xs'>Owned by <span class='font-semibold'>${parcel.owner}</span></h6></div>`"
           :allowHTML="true"
           :placement="'right'"
-        > <div :class="`${parcel.coords[3][0] - parcel.coords[0][0] < parcel.coords[1][1] - parcel.coords[0][1] ? '-rotate-45' : 'rotate-0'} w-full h-full text-[0.7rem] font-semibold text-black  opacity-100 flex items-center justify-center whitespace-nowrap`">
-          {{ parcel.coords[3][0] - parcel.coords[0][0] > 40 ? parcel.name : null }}
-          <!-- {{ parcel.label ?? null }} -->
-        </div>
-          </Tippy>
+        >
+          <div
+            :class="`${
+              parcel.coords[3][0] - parcel.coords[0][0] <
+              parcel.coords[1][1] - parcel.coords[0][1]
+                ? '-rotate-45'
+                : 'rotate-0'
+            } w-full h-full text-[0.7rem] font-semibold text-black  opacity-100 flex items-center justify-center whitespace-nowrap`"
+          >
+            {{
+              parcel.coords[3][0] - parcel.coords[0][0] > 40
+                ? parcel.name
+                : null
+            }}
+            <!-- {{ parcel.label ?? null }} -->
+          </div>
+        </Tippy>
       </div>
       <dialog
         :style="{ 'font-family': 'Poppins' }"
@@ -379,11 +392,20 @@ function dragElement(elmnt) {
         </div>
       </dialog>
     </div>
-    <div id="mydiv" 
+    <div
+      id="mydiv"
       :class="`z-50 absolute bg-amber-50 opacity-90 hover:bg-amber-100 active:opacity-50 cursor-move rotate-0 lg:rotate-3 lg:translate-x-[135%] px-4 py-4 rounded-2xl`"
-      style="font-family: 'Poppins'; filter: drop-shadow(0 2px 2px #000); transition-duration: 300ms; transition-property: background-color, opacity;"
+      style="
+        font-family: 'Poppins';
+        filter: drop-shadow(0 2px 2px #000);
+        transition-duration: 300ms;
+        transition-property: background-color, opacity;
+      "
     >
-      <div class="text-2xl text-black font-semibold text-center" id="myDivheader">
+      <div
+        class="text-2xl text-black font-semibold text-center"
+        id="myDivheader"
+      >
         <span class="font-semibold uppercase">Online: </span>
         <span class="font-semibold">{{
           $avatarPos.length ? $avatarPos.length - 2 : "?"
@@ -413,8 +435,15 @@ function dragElement(elmnt) {
           / 110
         </div>
       </div>
-      <div v-if="$avatarPos.length && show">
-        <div v-if="$avatarPos.length > 41" class="min-w-120 w-120 columns-2">
+      <div
+        v-if="!$avatarPos.length"
+        class="min-w-120 max-w-120 w-120 columns-1"
+      >
+        <img class="max-w-120 w-120" src="../assets/twi.gif?url" />
+        <div class="text-center mt-1 text-lg">Loading users...</div>
+      </div>
+      <div v-else-if="$avatarPos.length > 0">
+        <div class="min-w-120 w-120 columns-2">
           <div
             v-for="(user, idx) in sortedAvatarPos"
             @mouseover="magnify(user)"
@@ -435,42 +464,7 @@ function dragElement(elmnt) {
             </div>
           </div>
         </div>
-        <div v-else class="min-w-64 w-64 columns-1">
-          <div
-            v-for="(user, idx) in $avatarPos.filter(
-              (u) =>
-                u.display_name !== 'BaltiMare' &&
-                u.display_name !== 'Builder Pony'
-            )"
-            @mouseover="magnify(user)"
-            @mouseout="demagnify(user)"
-            class="hidden lg:block w-full"
-          >
-            <div
-              class="w-auto whitespace-nowrap rounded hover:bg-neutral-800 text-black hover:text-amber-50 px-1 duration-300 cursor-move font-medium gap-x-2 flex items-center justify-start"
-            >
-              <img
-                :src="user.pfp"
-                class="w-4 h-4 rounded"
-                onerror="this.src='/twi.png'"
-              />
-              <span class="text-xs lg:text-sm font-medium">
-                {{ user.display_name.replace(" Resident", "") }}
-              </span>
-            </div>
-          </div>
-        </div>
       </div>
-      <div
-        v-else-if="show"
-        class="min-h-80 flex flex-col items-center justify-center text-center"
-      >
-        <img class="max-w-80" src="../assets/twi.gif?url" />
-        <div class="text-center mt-1 text-lg">Loading users...</div>
-      </div>
-      <!-- <div v-if="!show">
-        <input /> Disable
-      </div> -->
     </div>
   </div>
 </template>

@@ -8,7 +8,7 @@ updateBans();
 const $bans = useStore(bans);
 
 const from = ref("2022-07-08");
-const to = ref("2024-04-30");
+const to = ref(new Date().toISOString().split("T")[0]);
 
 const janny = ref("");
 
