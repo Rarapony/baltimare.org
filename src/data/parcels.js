@@ -453,8 +453,8 @@ export default [
     owner: "Rarapony",
     rent: Infinity,
     coords: [
-      [48, 170],
-      [48, 214],
+      [44, 170],
+      [44, 214],
       [68, 214],
       [68, 170],
     ],
@@ -485,6 +485,7 @@ export default [
     type: "hangout",
     name: "The Campfire",
     label: "The Campfire",
+    rotate: 0,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1447,6 +1448,7 @@ export default [
     type: "parcel",
     name: "The Stage",
     label: "The Stage",
+    rotate: 45,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1463,7 +1465,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Horse Heights Sign",
-    label: "Horse Heights Sign",
+    label: "Horse Heights",
     owner: "Rarapony",
     rent: Infinity,
     coords: [
