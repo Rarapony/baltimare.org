@@ -22,7 +22,7 @@ export default [
   {
     type: "parcel",
     name: "Marble's House",
-    label: "",
+    label: "Marble",
     owner: "Marble",
     rent: 702,
     coords: [
@@ -38,7 +38,8 @@ export default [
   {
     type: "parcel",
     name: "ღIndigo Hollowheartღ's House",
-    label: "",
+    label: "Indigo",
+    rotate: 45,
     owner: "ღIndigo Hollowheartღ",
     rent: 468,
     coords: [
@@ -54,7 +55,8 @@ export default [
   {
     type: "parcel",
     name: "Lampwick's House",
-    label: "",
+    label: "Lampwick",
+    rotate: 90,
     owner: "Lampwick",
     rent: 352,
     coords: [
@@ -70,7 +72,8 @@ export default [
   {
     type: "parcel",
     name: "Wild Card's House",
-    label: "",
+    label: "Wild Card",
+    rotate: 90,
     owner: "Wild Card",
     rent: 352,
     coords: [
@@ -86,7 +89,8 @@ export default [
   {
     type: "parcel",
     name: "ღBountiful Hollowheartღ's House",
-    label: "",
+    label: "Bountiful",
+    rotate: 45,
     owner: "ღBountiful Hollowheartღ",
     rent: 468,
     coords: [
@@ -103,6 +107,8 @@ export default [
     type: "parcel",
     name: "Parallel Pop's House",
     owner: "Parallel Pop",
+    label: "Parallel",
+    rotate: 45,
     rent: 468,
     coords: [
       [160, 0],
@@ -118,6 +124,8 @@ export default [
     type: "parcel",
     name: "CloudyKino's House",
     owner: "CloudyKino",
+    label: "CloudyKino",
+    rotate: 45,
     rent: 468,
     coords: [
       [192, 0],
@@ -133,6 +141,8 @@ export default [
     type: "parcel",
     name: "Tapioca Pudding's House",
     owner: "Tapioca Pudding",
+    label: "Tapioca",
+    rotate: 45,
     rent: 314,
     coords: [
       [224, 0],
@@ -148,6 +158,8 @@ export default [
     type: "parcel",
     name: "Sweet Cakes's House",
     owner: "Sweet Cakes",
+    label: "Sweet Cakes",
+    rotate: 45,
     rent: 374,
     coords: [
       [0, 56],
@@ -162,7 +174,8 @@ export default [
   {
     type: "parcel",
     name: "trixieshy's House",
-    label: "",
+    label: "trixieshy",
+    rotate: 45,
     owner: "trixieshy",
     rent: 374,
     coords: [
@@ -178,7 +191,8 @@ export default [
   {
     type: "parcel",
     name: "HereToHorse's House",
-    label: "",
+    label: "HereToHorse",
+    rotate: 45,
     owner: "HereToHorse",
     rent: 374,
     coords: [
@@ -195,6 +209,8 @@ export default [
     type: "parcel",
     name: "Dynebot's House",
     owner: "Dynebot",
+    label: "Dynebot",
+    rotate: 45,
     rent: 280,
     coords: [
       [112, 56],
@@ -210,6 +226,8 @@ export default [
     type: "parcel",
     name: "Dusty Feather's House",
     owner: "Dusty Feather",
+    label: "Dusty",
+    rotate: 90,
     rent: 280,
     coords: [
       [136, 56],
@@ -226,6 +244,8 @@ export default [
     type: "parcel",
     name: "ღNORDING HOLLOWHEARTღ's House",
     owner: "ღNORDING HOLLOWHEARTღ",
+    label: "NORDING",
+    rotate: 45,
     rent: 374,
     coords: [
       [160, 56],
@@ -242,6 +262,8 @@ export default [
     type: "parcel",
     name: "ღFlutterButter Hollowheartღ's House",
     owner: "ღFlutterButter Hollowheartღ",
+    label: "FlutterButter",
+    rotate: 45,
     rent: 374,
     coords: [
       [192, 56],
@@ -258,6 +280,8 @@ export default [
     type: "parcel",
     name: "Snowstorm's House",
     owner: "Snowstorm",
+    label: "Snowstorm",
+    rotate: 90,
     rent: 187,
     coords: [
       [224, 56],
@@ -274,6 +298,8 @@ export default [
     type: "parcel",
     name: "鉄竜 Влодовйч's House",
     owner: "鉄竜 Влодовйч",
+    label: "鉄竜",
+    rotate: 90,
     rent: 187,
     coords: [
       [240, 56],
@@ -290,6 +316,7 @@ export default [
     type: "parcel",
     name: "Lalana Lu-Am's House",
     owner: "Lalana Lu-Am",
+    label: "Lalana",
     rent: 187,
     coords: [
       [0, 116],
@@ -369,6 +396,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Horselover197's House",
+    label: "Horselover197",
+    rotate: 45,
     owner: "Horselover197",
     rent: 374,
     coords: [
@@ -385,6 +414,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Velvet Lights's House",
+    label: "Velvet",
     owner: "Velvet Lights",
     rent: 187,
     coords: [
@@ -401,7 +431,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Red's House",
-    label: "",
+    label: "Red",
     owner: "Red",
     rent: 187,
     coords: [
@@ -471,7 +501,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Ebonyglow's House",
-    label: "",
+    label: "Ebonyglow",
     owner: "Ebonyglow",
     rent: 467,
     coords: [
@@ -488,7 +518,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Xipsyl's House",
-    label: "",
+    label: "Xipsyl",
     owner: "Xipsyl",
     rent: 1495,
     coords: [
@@ -505,7 +535,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Sky Line's House",
-    label: "",
+    label: "Sky Line",
+    rotate: 90,
     owner: "Sky Line",
     rent: 467,
     coords: [
@@ -522,7 +553,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "15's House",
-    label: "",
+    label: "15",
+    rotate: 90,
     owner: "15",
     rent: 467,
     coords: [
@@ -539,7 +571,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Albatross's House",
-    label: "",
+    label: "Albatross",
+    rotate: 90,
     owner: "Albatross",
     rent: 467,
     coords: [
@@ -556,7 +589,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Mister Bones's House",
-    label: "",
+    label: "Mr. Bones",
     owner: "Mister Bones",
     rent: 467,
     coords: [
@@ -573,7 +606,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Midnight Wishes's House",
-    label: "",
+    label: "Midnight",
     owner: "Midnight Wishes",
     rent: 467,
     coords: [
@@ -590,6 +623,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Taekia T'uil's House",
+    label: "Taekia",
+    rotate: 45,
     owner: "Taekia T'uil",
     rent: 467,
     coords: [
@@ -606,6 +641,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Scribble Script's House",
+    label: "Scribble",
+    rotate: 45,
     owner: "Scribble Script",
     rent: 467,
     coords: [
@@ -622,6 +659,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Xen's House",
+    label: "Xen",
+    rotate: 45,
     owner: "Xen",
     rent: 467,
     coords: [
@@ -639,6 +678,8 @@ export default [
     type: "parcel",
     name: "Stiffie's House",
     owner: "Stiffie",
+    label: "Stiffie",
+    rotate: 90,
     rent: 234,
     coords: [
       [76, 52],
@@ -655,6 +696,8 @@ export default [
     type: "parcel",
     name: "Lavender Sunrise's House",
     owner: "Lavender Sunrise",
+    label: "Lavender",
+    rotate: 90,
     rent: 234,
     coords: [
       [96, 52],
@@ -671,6 +714,8 @@ export default [
     type: "parcel",
     name: "Russet Ruffle's House",
     owner: "Russet Ruffle",
+    label: "Russet",
+    rotate: 90,
     rent: 234,
     coords: [
       [116, 52],
@@ -687,6 +732,8 @@ export default [
     type: "parcel",
     name: "Bubblegum Kiss's House",
     owner: "Bubblegum Kiss",
+    label: "Bubblegum",
+    rotate: 45,
     rent: 467,
     coords: [
       [100, 88],
@@ -702,6 +749,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Acura's House",
+    label: "Acura",
+    rotate: 90,
     owner: "Acura",
     rent: 234,
     coords: [
@@ -719,6 +768,8 @@ export default [
     type: "parcel",
     name: "为党争光's House",
     owner: "为党争光",
+    label: "为党争光",
+    rotate: 90,
     rent: 234,
     coords: [
       [64, 148],
@@ -735,6 +786,8 @@ export default [
     type: "parcel",
     name: "Lemon Drop's House",
     owner: "Lemon Drop",
+    label: "Lemon",
+    rotate: 90,
     rent: 234,
     coords: [
       [84, 148],
@@ -751,6 +804,8 @@ export default [
     type: "parcel",
     name: "Quote's House",
     owner: "Quote",
+    label: "Quote",
+    rotate: 90,
     rent: 467,
     coords: [
       [44, 180],
@@ -767,6 +822,8 @@ export default [
     type: "parcel",
     name: "N/A's House",
     owner: "N/A",
+    label: "N/A",
+    rotate: 90,
     rent: 467,
     coords: [
       [64, 180],
@@ -783,6 +840,8 @@ export default [
     type: "parcel",
     name: "Rosy Scribbles's House",
     owner: "Rosy Scribbles",
+    label: "Rosy",
+    rotate: 90,
     rent: 467,
     coords: [
       [84, 180],
@@ -894,6 +953,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Copper Crystal's House",
+    label: "Copper",
+    rotate: 90,
     owner: "Copper Crystal",
     rent: 467,
     coords: [
@@ -910,7 +971,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Grey's House",
-    label: "",
+    label: "Grey",
     owner: "Grey",
     rent: 467,
     coords: [
@@ -927,7 +988,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Neri's House",
-    label: "",
+    label: "Neri",
     owner: "Neri",
     rent: 467,
     coords: [
@@ -944,7 +1005,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Silver Wind's House",
-    label: "",
+    label: "Silver Wind",
     owner: "Silver Wind",
     rent: 467,
     coords: [
@@ -961,7 +1022,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "sleepyhoers's House",
-    label: "",
+    label: "sleepy",
     owner: "sleepyhoers",
     rent: 467,
     coords: [
@@ -1108,6 +1169,8 @@ export default [
     type: "parcel",
     name: "Athena-el Kindknight's House",
     owner: "Athena-el Kindknight",
+    label: "Athena",
+    rotate: 90,
     rent: 467,
     coords: [
       [180, 148],
@@ -1123,6 +1186,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "gean's House",
+    label: "gean",
+    rotate: 90,
     owner: "gean",
     rent: 467,
     coords: [
@@ -1140,6 +1205,8 @@ export default [
     type: "parcel",
     name: "Snowy's House",
     owner: "Snowy",
+    label: "Snowy",
+    rotate: 90,
     rent: 467,
     coords: [
       [180, 116],
@@ -1156,6 +1223,8 @@ export default [
     type: "parcel",
     name: "LittleBolt's House",
     owner: "LittleBolt",
+    label: "LittleBolt",
+    rotate: 90,
     rent: 234,
     coords: [
       [200, 116],
@@ -1172,6 +1241,7 @@ export default [
     type: "parcel",
     name: "Hibiscus Heart's House",
     owner: "Hibiscus Heart",
+    label: "Hibiscus",
     rent: 234,
     coords: [
       [180, 84],

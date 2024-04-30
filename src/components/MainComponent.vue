@@ -283,7 +283,7 @@ function dragElement(elmnt) {
               parcel.rotate === 45
                 ? '-rotate-45'
                 : parcel.rotate === 90 ? '-rotate-90' : 'rotate-0'
-            } w-full h-full text-[0.7rem] font-semibold text-black  opacity-100 flex items-center justify-center whitespace-nowrap`"
+            } w-full h-full text-[0.8rem] font-semibold text-black  opacity-100 flex items-center justify-center whitespace-nowrap`"
           >
             <!-- {{
               parcel.coords[3][0] - parcel.coords[0][0] > 40
