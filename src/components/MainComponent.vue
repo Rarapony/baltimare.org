@@ -280,9 +280,9 @@ function dragElement(elmnt) {
         >
           <div
             :class="`${
-              parcel.rotate
-                ? '-rotate-' + parcel.rotate
-                : 'rotate-0'
+              parcel.rotate === 45
+                ? '-rotate-45'
+                : parcel.rotate === 90 ? '-rotate-90' : 'rotate-0'
             } w-full h-full text-[0.7rem] font-semibold text-black  opacity-100 flex items-center justify-center whitespace-nowrap`"
           >
             <!-- {{
