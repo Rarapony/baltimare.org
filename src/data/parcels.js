@@ -1491,7 +1491,7 @@ export default [
       [244, 40],
       [244, 0],
     ],
-    img: `/threads/${images[~~(Math.random() * images.length)]}`,
+    img: `/parcels/lighthouse.jpg`,
     teleport: [221, 46, 38],
     location: 'Horse Heights',
   },
