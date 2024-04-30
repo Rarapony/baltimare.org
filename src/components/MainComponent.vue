@@ -180,7 +180,7 @@ function dragElement(elmnt) {
         />
       </div>
     </a>
-    <div class="w-full lg:w-4/5 relative flex rounded-lg mt-4">
+    <div class="w-full lg:w-5/6 relative flex rounded-lg mt-4">
       <img
         src="../assets/mapcropped3.png?url"
         class="w-full rounded-lg"
