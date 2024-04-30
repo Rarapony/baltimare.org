@@ -22,7 +22,7 @@ export default [
   {
     type: "parcel",
     name: "Marble's House",
-    label: "Marble",
+    label: "",
     owner: "Marble",
     rent: 702,
     coords: [
@@ -70,7 +70,7 @@ export default [
   {
     type: "parcel",
     name: "Wild Card's House",
-    label: "Wild Card",
+    label: "",
     owner: "Wild Card",
     rent: 352,
     coords: [
@@ -162,7 +162,7 @@ export default [
   {
     type: "parcel",
     name: "trixieshy's House",
-    label: "trixieshy",
+    label: "",
     owner: "trixieshy",
     rent: 374,
     coords: [
@@ -178,7 +178,7 @@ export default [
   {
     type: "parcel",
     name: "HereToHorse's House",
-    label: "HereToHorse",
+    label: "",
     owner: "HereToHorse",
     rent: 374,
     coords: [
@@ -401,7 +401,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Red's House",
-    label: "Red",
+    label: "",
     owner: "Red",
     rent: 187,
     coords: [
@@ -419,13 +419,14 @@ export default [
     type: "hangout",
     name: "The Hangout",
     label: "The Hangout",
+    rotate: 90,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
-      [48, 176],
-      [48, 208],
-      [68, 208],
-      [68, 176],
+      [48, 170],
+      [48, 214],
+      [68, 214],
+      [68, 170],
     ],
     img: 'opg324.png',
     teleport: [57, 188, 36],
@@ -436,6 +437,7 @@ export default [
     type: "stadium",
     name: "Baltimare Stadium",
     label: "Baltimare Stadium",
+    rotate: 45,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -457,9 +459,9 @@ export default [
     rent: Infinity,
     coords: [
       [70, 150],
-      [70, 208],
-      [130, 208],
-      [130, 150],
+      [70, 214],
+      [115, 214],
+      [115, 150],
     ],
     img: `/threads/356.png`,
     teleport: [82, 180, 36],
@@ -469,7 +471,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Ebonyglow's House",
-    label: "Ebonyglow",
+    label: "",
     owner: "Ebonyglow",
     rent: 467,
     coords: [
@@ -486,7 +488,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Xipsyl's House",
-    label: "Xipsyl",
+    label: "",
     owner: "Xipsyl",
     rent: 1495,
     coords: [
@@ -503,7 +505,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Sky Line's House",
-    label: "Sky Line",
+    label: "",
     owner: "Sky Line",
     rent: 467,
     coords: [
@@ -520,7 +522,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "15's House",
-    label: "15",
+    label: "",
     owner: "15",
     rent: 467,
     coords: [
@@ -537,7 +539,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Albatross's House",
-    label: "Albatross",
+    label: "",
     owner: "Albatross",
     rent: 467,
     coords: [
@@ -554,7 +556,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Mister Bones's House",
-    label: "Mister Bones",
+    label: "",
     owner: "Mister Bones",
     rent: 467,
     coords: [
@@ -571,7 +573,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Midnight Wishes's House",
-    label: "Midnight Wishes",
+    label: "",
     owner: "Midnight Wishes",
     rent: 467,
     coords: [
@@ -908,7 +910,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Grey's House",
-    label: "Grey",
+    label: "",
     owner: "Grey",
     rent: 467,
     coords: [
@@ -925,7 +927,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Neri's House",
-    label: "Neri",
+    label: "",
     owner: "Neri",
     rent: 467,
     coords: [
@@ -1248,6 +1250,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "La Pouliche Fantastique",
+    label: "Café",
+    rotate: 90,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1264,6 +1268,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Baltimare Theater",
+    label: "Theater",
+    rotate: 90,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1280,6 +1286,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Baltimare Ponice Department",
+    label: "Ponice",
+    rotate: 90,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1296,6 +1304,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "The Dockyard",
+    label: "Strip Club",
+    rotate: 90,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1312,6 +1322,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "The Baltimare Art Gallery",
+    label: "Gallery",
+    rotate: 90,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1328,6 +1340,8 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Sweet Cakes' Bakery",
+    label: "Bakery",
+    rotate: 90,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1345,6 +1359,7 @@ export default [
     type: "parcel",
     name: "Baltimare Church",
     label: "The Church",
+    rotate: 45,
     owner: "Rarapony",
     rent: Infinity,
     coords: [
@@ -1407,5 +1422,22 @@ export default [
     img: `/threads/${images[~~(Math.random() * images.length)]}`,
     teleport: [221, 46, 38],
     location: 'Horse Heights',
+  },
+  {
+    parcelID: "",
+    type: "parcel",
+    name: "Baltimare Plaza",
+    label: "Baltimare Plaza",
+    owner: "Rarapony",
+    rent: Infinity,
+    coords: [
+      [150, 100],
+      [150, 172],
+      [256, 172],
+      [256, 100],
+    ],
+    img: `/threads/${images[~~(Math.random() * images.length)]}`,
+    teleport: [221, 46, 38],
+    location: 'Baltimare',
   },
 ];

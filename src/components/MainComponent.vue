@@ -280,18 +280,17 @@ function dragElement(elmnt) {
         >
           <div
             :class="`${
-              parcel.coords[3][0] - parcel.coords[0][0] <
-              parcel.coords[1][1] - parcel.coords[0][1]
-                ? '-rotate-45'
+              parcel.rotate
+                ? '-rotate-' + parcel.rotate
                 : 'rotate-0'
             } w-full h-full text-[0.7rem] font-semibold text-black  opacity-100 flex items-center justify-center whitespace-nowrap`"
           >
-            {{
+            <!-- {{
               parcel.coords[3][0] - parcel.coords[0][0] > 40
                 ? parcel.name
                 : null
-            }}
-            <!-- {{ parcel.label ?? null }} -->
+            }} -->
+            {{ parcel.label ?? null }}
           </div>
         </Tippy>
       </div>
