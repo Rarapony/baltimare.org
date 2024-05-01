@@ -500,6 +500,24 @@ export default [
   },
   {
     parcelID: "",
+    type: "park",
+    name: "The Park",
+    label: "The Park",
+    rotate: 0,
+    owner: "Rarapony",
+    rent: Infinity,
+    coords: [
+      [115, 170],
+      [115, 214],
+      [155, 214],
+      [155, 170],
+    ],
+    img: `/parcels/picnic.png`,
+    teleport: [82, 180, 36],
+    location: 'Baltimare',
+  },
+  {
+    parcelID: "",
     type: "parcel",
     name: "Ebonyglow's House",
     label: "Ebonyglow",
@@ -971,9 +989,9 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "Grey's House",
-    label: "Grey",
-    owner: "Grey",
+    name: "Silver Shift's House",
+    label: "Silver",
+    owner: "Silver Shift",
     rent: 467,
     coords: [
       [212, 236],

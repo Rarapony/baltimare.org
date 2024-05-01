@@ -282,7 +282,9 @@ function dragElement(elmnt) {
             :class="`${
               parcel.rotate === 45
                 ? '-rotate-45'
-                : parcel.rotate === 90 ? '-rotate-90' : 'rotate-0'
+                : parcel.rotate === 90
+                ? '-rotate-90'
+                : 'rotate-0'
             } w-full h-full text-[0.8rem] font-semibold text-black  opacity-100 flex items-center justify-center whitespace-nowrap`"
           >
             <!-- {{
@@ -407,7 +409,17 @@ function dragElement(elmnt) {
       >
         <span class="font-semibold uppercase">Online: </span>
         <span class="font-semibold">{{
-          $avatarPos.length ? $avatarPos.length - 2 : "?"
+          $avatarPos.length
+            ? Math.max(
+                0,
+                $avatarPos.filter((x) => x.location === "Baltimare").length - 1
+              ) +
+              Math.max(
+                0,
+                $avatarPos.filter((x) => x.location === "Horse Heights")
+                  .length - 1
+              )
+            : "?"
         }}</span>
         / 220
       </div>
