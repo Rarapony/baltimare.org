@@ -333,6 +333,7 @@ export default [
     type: "parcel",
     name: "Hyacinth Hearts's House",
     owner: "Hyacinth Hearts",
+    label: "HH",
     rent: 94,
     coords: [
       [0, 136],
@@ -349,6 +350,7 @@ export default [
     type: "parcel",
     name: "PuddingPone's House",
     owner: "PuddingPone",
+    label: "PP",
     rent: 94,
     coords: [
       [16, 136],
@@ -365,6 +367,7 @@ export default [
     type: "parcel",
     name: "Boggy's House",
     owner: "Boggy",
+    label: "B",
     rent: 94,
     coords: [
       [0, 156],
@@ -381,6 +384,7 @@ export default [
     type: "parcel",
     name: "Lavender Sunrise's House",
     owner: "Lavender Sunrise",
+    label: "LS",
     rent: 94,
     coords: [
       [16, 156],
@@ -396,7 +400,7 @@ export default [
     parcelID: "",
     type: "parcel",
     name: "Horselover197's House",
-    label: "Horselover197",
+    label: "Horselover",
     rotate: 45,
     owner: "Horselover197",
     rent: 374,
@@ -501,7 +505,7 @@ export default [
   {
     parcelID: "",
     type: "park",
-    name: "The Park",
+    name: "Baltimare Park",
     label: "The Park",
     rotate: 0,
     owner: "Rarapony",
@@ -877,6 +881,7 @@ export default [
     type: "parcel",
     name: "Silicon Skies's House",
     owner: "Silicon Skies",
+    label: "SS",
     rent: 93,
     coords: [
       [240, 156],
@@ -893,6 +898,7 @@ export default [
     type: "parcel",
     name: "Wolvan's House",
     owner: "Wolvan",
+    label: "W",
     rent: 93,
     coords: [
       [224, 156],
@@ -909,6 +915,7 @@ export default [
     type: "parcel",
     name: "KumikoShy's House",
     owner: "KumikoShy",
+    label: "KS",
     rent: 94,
     coords: [
       [240, 136],
@@ -925,6 +932,7 @@ export default [
     type: "parcel",
     name: "Kezzie's House",
     owner: "Kezzie",
+    label: "K",
     rent: 93,
     coords: [
       [224, 136],
@@ -941,6 +949,7 @@ export default [
     type: "parcel",
     name: "Batty Bliss's House",
     owner: "Batty Bliss",
+    label: "BB",
     rent: 93,
     coords: [
       [240, 116],
@@ -957,6 +966,7 @@ export default [
     type: "parcel",
     name: "Alpha Rush's House",
     owner: "Alpha Rush",
+    label: "AR",
     rent: 467,
     coords: [
       [224, 116],
@@ -1076,6 +1086,7 @@ export default [
     type: "parcel",
     name: "Raincloud Flank's House",
     owner: "Raincloud Flank",
+    label: "RF",
     rent: 467,
     coords: [
       [216, 192],
@@ -1092,6 +1103,7 @@ export default [
     type: "parcel",
     name: "Fish Costanza's House",
     owner: "Fish Costanza",
+    label: "FC",
     rent: 467,
     coords: [
       [200, 192],
@@ -1108,6 +1120,7 @@ export default [
     type: "parcel",
     name: "Gerael's House",
     owner: "Gerael",
+    label: "G",
     rent: 467,
     coords: [
       [216, 208],
@@ -1124,6 +1137,7 @@ export default [
     type: "parcel",
     name: "Orion's House",
     owner: "Orion",
+    label: "O",
     rent: 93,
     coords: [
       [200, 208],
@@ -1140,6 +1154,7 @@ export default [
     type: "parcel",
     name: "GhostyGlue's House",
     owner: "GhostyGlue",
+    label: "GG",
     rent: 93,
     coords: [
       [164, 192],
@@ -1156,6 +1171,7 @@ export default [
     type: "parcel",
     name: "Top Clue's House",
     owner: "Top Clue",
+    label: "TC",
     rent: 93,
     coords: [
       [180, 192],
@@ -1172,6 +1188,7 @@ export default [
     type: "parcel",
     name: "Saturn Muse's House",
     owner: "Saturn Muse",
+    label: "SM",
     rent: 93,
     coords: [
       [164, 164],
@@ -1277,6 +1294,7 @@ export default [
     type: "parcel",
     name: "Tidal Drift's House",
     owner: "Tidal Drift",
+    label: "TD",
     rent: 467,
     coords: [
       [180, 68],
@@ -1293,6 +1311,7 @@ export default [
     type: "parcel",
     name: "Pubby's House",
     owner: "Pubby",
+    label: "P",
     rent: 467,
     coords: [
       [196, 68],
@@ -1309,6 +1328,7 @@ export default [
     type: "parcel",
     name: "Pumpkin Twist's House",
     owner: "Pumpkin Twist",
+    label: "PT",
     rent: 93,
     coords: [
       [224, 72],
@@ -1325,6 +1345,7 @@ export default [
     type: "parcel",
     name: "Arumea's House",
     owner: "Arumea",
+    label: "A",
     rent: 93,
     coords: [
       [224, 56],
@@ -1464,7 +1485,7 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "The Stage",
+    name: "Baltimare Stage",
     label: "The Stage",
     rotate: 45,
     owner: "Rarapony",
