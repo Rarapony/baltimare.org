@@ -332,7 +332,7 @@ function dragElement(elmnt) {
               class="w-auto z-0  h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-4"
             />
           </div>
-          <div class="min-h-96 my-8 relative flex flex-col items-center justify-center w-full" v-else-if="parcel.img.length === 2">
+          <div class="min-h-96 my-4 relative flex flex-col items-center justify-center w-full" v-else-if="parcel.img.length === 2">
             <img
               :src="
                 parcel.img[0] ? `${parcel.img[0]}` : '/Feast_Hall_Preparations.png'
@@ -350,7 +350,7 @@ function dragElement(elmnt) {
               class="z-10 ml-20 -mt-16 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg rotate-3 p-3"
             />
           </div>
-          <div class="min-h-96 relative flex items-center justify-center w-full mb-16 " v-else-if="parcel.img.length === 3">
+          <div class="min-h-96 mt-4 relative flex items-center justify-center w-full mb-16 " v-else-if="parcel.img.length === 3">
             <img
               :src="
                 parcel.img[0] ? `${parcel.img[0]}` : '/Feast_Hall_Preparations.png'
