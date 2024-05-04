@@ -105,7 +105,7 @@ export default [
   },
   {
     type: "parcel",
-    name: "Parallel Pop's House",
+    name: "Mare Hall",
     owner: "Parallel Pop",
     label: "Parallel",
     rotate: 45,
