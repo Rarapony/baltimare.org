@@ -1532,7 +1532,7 @@ export default [
       [80, 146],
       [80, 114],
     ],
-    img: [`/parcels/thestage.png`],
+    img: [`/parcels/thestage.png`, `/parcels/stage2.jpg`],
     teleport: [70, 150, 38],
     location: 'Baltimare',
   },
