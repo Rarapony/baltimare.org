@@ -498,7 +498,7 @@ export default [
       [115, 214],
       [115, 170],
     ],
-    img: [`/threads/356.png`],
+    img: [`/parcels/campfire2.png`, `/parcels/campfire.png`],
     teleport: [82, 180, 36],
     location: 'Baltimare',
   },

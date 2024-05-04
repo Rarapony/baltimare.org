@@ -332,14 +332,14 @@ function dragElement(elmnt) {
               class="w-auto z-0  h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-4"
             />
           </div>
-          <div class="min-h-96 relative flex items-center justify-center w-full" v-else-if="parcel.img.length === 2">
+          <div class="min-h-96 my-8 relative flex flex-col items-center justify-center w-full" v-else-if="parcel.img.length === 2">
             <img
               :src="
                 parcel.img[0] ? `${parcel.img[0]}` : '/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
-              class="z-10 absolute left-8 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-3"
+              class="z-0 mr-20 -mb-16 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-3"
             />
             <img
               :src="
@@ -347,7 +347,7 @@ function dragElement(elmnt) {
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
-              class="z-0 absolute right-8 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg rotate-3 p-3"
+              class="z-10 ml-20 -mt-16 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg rotate-3 p-3"
             />
           </div>
           <div class="min-h-96 relative flex items-center justify-center w-full mb-16 " v-else-if="parcel.img.length === 3">
