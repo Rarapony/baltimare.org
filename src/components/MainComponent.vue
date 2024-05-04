@@ -441,7 +441,6 @@ function dragElement(elmnt) {
       id="mydiv"
       :class="`z-50 absolute bg-amber-50 opacity-90 hover:bg-amber-100 active:opacity-50 cursor-move rotate-0 lg:rotate-3 lg:translate-x-[135%] px-4 py-4 rounded-2xl`"
       style="
-        font-family: 'Poppins';
         filter: drop-shadow(0 2px 2px #000);
         transition-duration: 300ms;
         transition-property: background-color, opacity;
