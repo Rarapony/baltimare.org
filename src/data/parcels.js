@@ -480,7 +480,7 @@ export default [
       [70, 170],
       [70, 146],
     ],
-    img: [`/parcels/pool.jpg`],
+    img: [`/parcels/pool.jpg`, `/parcels/pool2.jpg`],
     teleport: [57, 188, 36],
     location: 'Baltimare',
   },
