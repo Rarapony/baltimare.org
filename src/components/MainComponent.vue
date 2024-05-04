@@ -461,7 +461,7 @@ function dragElement(elmnt) {
               Math.max(
                 0,
                 $avatarPos.filter((x) => x.location === "Horse Heights")
-                  .length - 1
+                  .length
               )
             : "?"
         }}</span>
@@ -483,8 +483,7 @@ function dragElement(elmnt) {
           <span class="font-normal">{{
             Math.max(
               0,
-              $avatarPos.filter((x) => x.location === "Horse Heights").length -
-                1
+              $avatarPos.filter((x) => x.location === "Horse Heights").length
             )
           }}</span>
           / 110
