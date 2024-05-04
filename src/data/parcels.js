@@ -242,7 +242,7 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "ღNORDING HOLLOWHEARTღ's House",
+    name: "NORDING's House",
     owner: "ღNORDING HOLLOWHEARTღ",
     label: "NORDING",
     rotate: 45,
@@ -260,7 +260,7 @@ export default [
   {
     parcelID: "",
     type: "parcel",
-    name: "ღFlutterButter Hollowheartღ's House",
+    name: "FlutterButter's House",
     owner: "ღFlutterButter Hollowheartღ",
     label: "FlutterButter",
     rotate: 45,
@@ -1547,7 +1547,7 @@ export default [
       [256, 172],
       [256, 100],
     ],
-    img: `/threads/${images[~~(Math.random() * images.length)]}`,
+    img: `/parcels/plaza.png`,
     teleport: [221, 46, 38],
     location: 'Baltimare',
   },
