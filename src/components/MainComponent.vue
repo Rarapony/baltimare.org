@@ -357,7 +357,7 @@ function dragElement(elmnt) {
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
-              class="top-4 left-8 absolute z-0 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-2"
+              class="top-4 left-8 absolute z-0 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-3"
             />
             <img
               :src="
@@ -365,7 +365,7 @@ function dragElement(elmnt) {
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
-              class="-bottom-8 absolute z-10 w-1/2  h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg rotate-3 p-2"
+              class="-bottom-8 absolute z-10 w-1/2  h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg rotate-3 p-3"
             />
             <img
               :src="
@@ -373,7 +373,7 @@ function dragElement(elmnt) {
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
-              class="top-4 right-8 absolute z-0 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-1 p-2"
+              class="top-4 right-8 absolute z-0 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-1 p-3"
             />
           </div>
           <div class="flex flex-col gap-y-2 w-auto lg:ml-12">
