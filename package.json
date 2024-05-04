@@ -27,5 +27,10 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.66"
+  },
+  "overrides": {
+    "astro": {
+      "sharp": "0.33.0"
+    }
   }
 }
