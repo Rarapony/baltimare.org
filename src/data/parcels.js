@@ -324,7 +324,7 @@ export default [
       [32, 132],
       [32, 116],
     ],
-    img: `/threads/${images[~~(Math.random() * images.length)]}`,
+    img: `/parcels/lalana.png`,
     teleport: [33, 117, 36],
     location: 'Baltimare',
   },
