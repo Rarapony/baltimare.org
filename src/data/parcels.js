@@ -107,7 +107,7 @@ export default [
     type: "parcel",
     name: "Mare Hall",
     owner: "Parallel Pop",
-    label: "Parallel",
+    label: "Mare Hall",
     rotate: 45,
     rent: 468,
     coords: [
