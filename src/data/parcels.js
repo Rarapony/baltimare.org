@@ -88,7 +88,7 @@ export default [
   },
   {
     type: "parcel",
-    name: "ღBountiful Hollowheartღ's House",
+    name: "Bountiful's House",
     label: "Bountiful",
     rotate: 45,
     owner: "ღBountiful Hollowheartღ",
