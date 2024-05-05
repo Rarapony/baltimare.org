@@ -11,8 +11,8 @@ const { pathname } = Astro.url;
 const backgrounds = ["squarestones.png", "grass.png", "sidewalk.png"];
 
 import bgImage1 from "../assets/textures/squarestones.png";
-import bgImage2 from "../assets/textures/grass.png";
-import bgImage3 from "../assets/textures/sidewalk.png";
+// import bgImage2 from "../assets/textures/grass.png";
+// import bgImage3 from "../assets/textures/sidewalk.png";
 
 import card1 from "../assets/Snapshot_008.png";
 import card2 from "../assets/opg356.png";
@@ -21,7 +21,7 @@ import card4 from "../assets/opg296.png";
 import card5 from "../assets/opg232.png";
 import card6 from "../assets/threads/321.png";
 
-const bgImages = [bgImage1, bgImage2, bgImage3].map(async (image) => {
+const bgImages = [bgImage1].map(async (image) => {
   return (await getImage({
     src: image,
     format: "webp",
