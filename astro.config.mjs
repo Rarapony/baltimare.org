@@ -5,7 +5,7 @@ import icon from "astro-icon";
 
 // import cloudflare from "@astrojs/cloudflare";
 
-// import playformCompress from "@playform/compress";
+import playformCompress from "@playform/compress";
 
 import sitemap from "@astrojs/sitemap";
 
@@ -15,7 +15,7 @@ export default defineConfig({
   prefetch: {
     prefetchAll: true
   },
-  integrations: [tailwind(), vue(), icon(), sitemap()]
+  integrations: [tailwind(), vue(), icon(), playformCompress(), sitemap()]
   // output: "hybrid",
   // adapter: cloudflare()  
 });
