@@ -498,7 +498,7 @@ export default [
       [256, 256],
       [256, 175],
     ],
-    img: ["hoofball.jpg"],
+    img: ["hoofball.jpg", `/parcels/stadium.jpg`],
     teleport: [192, 216, 36],
     location: 'Baltimare',
   },
