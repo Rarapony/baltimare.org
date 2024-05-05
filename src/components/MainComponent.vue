@@ -492,7 +492,7 @@ function dragElement(elmnt) {
         v-if="!$avatarPos.length"
         class="min-w-120 max-w-120 w-120 columns-1"
       >
-        <img class="max-w-120 w-120" src="../assets/twi.gif?url" />
+        <img class="max-w-120 w-120" src="/loading.webp" />
         <div class="text-center mt-1 text-lg">Loading users...</div>
       </div>
       <div v-else-if="$avatarPos.length > 0">
