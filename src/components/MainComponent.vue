@@ -165,7 +165,7 @@ function dragElement(elmnt) {
         class="w-64 lg:w-auto text-blue-300 text-6xl uppercase font-semibold tracking-wide"
       >
         <img
-          src="../assets/baltimare.png?url"
+          src="/baltimare.webp"
           style="filter: drop-shadow(0 4px 4px #000)"
           width="700"
         />
@@ -174,7 +174,7 @@ function dragElement(elmnt) {
         class="w-32 lg:w-auto -mt-12 lg:-mt-32 text-blue-300 text-6xl uppercase font-semibold tracking-wide"
       >
         <img
-          src="../assets/opg.png?url"
+          src="/opg.webp"
           style="filter: drop-shadow(0 4px 4px #000)"
           width="300"
         />
@@ -182,7 +182,7 @@ function dragElement(elmnt) {
     </a>
     <div class="w-full lg:w-5/6 relative flex rounded-lg mt-4">
       <img
-        src="../assets/mapcropped3.png?url"
+        src="/mapcropped3.webp"
         class="w-full rounded-lg"
         usemap="#image-map"
         id="map"
@@ -240,7 +240,7 @@ function dragElement(elmnt) {
               .replace(' Resident', '')
               .replace(' ', '.')
               .toLowerCase()}/thumb_sl_image.png`"
-            onerror="this.src='/twi.png'"
+            onerror="this.src='/twi.webp'"
             class="cursor-pointer glow bg-white min-w-6 max-w-6 w-6 min-h-6 max-h-6 h-6 rounded-full border border-white shadow-2xl z-50 duration-[1500ms]"
           />
         </Tippy>
@@ -428,7 +428,7 @@ function dragElement(elmnt) {
                 <img
                   :src="user.pfp"
                   class="w-4 h-4 rounded"
-                  onerror="this.src='/twi.png'"
+                  onerror="this.src='/twi.webp'"
                 />
                 <span class="text-sm">{{ user.display_name }}</span>
               </div>
