@@ -322,54 +322,79 @@ function dragElement(elmnt) {
         <div
           class="overflow-hidden p-4 md:p-8 bg-blue-50 flex flex-col items-center justify-center w-full h-auto sm:w-120 md:w-160 lg:w-240 xl:w-288"
         >
-          <div class="flex items-center justify-center w-1/2 my-8" v-if="parcel.img.length === 1">
+          <div
+            class="flex items-center justify-center w-1/2 my-8"
+            v-if="parcel.img.length === 1"
+          >
             <img
+              loading="lazy"
               :src="
                 parcel.img ? `${parcel.img[0]}` : '/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
-              class="w-auto z-0  h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-4"
+              class="w-auto z-0 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-4"
             />
           </div>
-          <div class="min-h-96 my-4 relative flex flex-col items-center justify-center w-full" v-else-if="parcel.img.length === 2">
+          <div
+            class="min-h-96 my-4 relative flex flex-col items-center justify-center w-full"
+            v-else-if="parcel.img.length === 2"
+          >
             <img
+              loading="lazy"
               :src="
-                parcel.img[0] ? `${parcel.img[0]}` : '/Feast_Hall_Preparations.png'
+                parcel.img[0]
+                  ? `${parcel.img[0]}`
+                  : '/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
               class="z-0 mr-20 -mb-16 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-3"
             />
             <img
+              loading="lazy"
               :src="
-                parcel.img[1] ? `${parcel.img[1]}` : '/Feast_Hall_Preparations.png'
+                parcel.img[1]
+                  ? `${parcel.img[1]}`
+                  : '/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
               class="z-10 ml-20 -mt-16 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg rotate-3 p-3"
             />
           </div>
-          <div class="min-h-96 mt-4 relative flex items-center justify-center w-full mb-16 " v-else-if="parcel.img.length === 3">
+          <div
+            class="min-h-96 mt-4 relative flex items-center justify-center w-full mb-16"
+            v-else-if="parcel.img.length === 3"
+          >
             <img
+              loading="lazy"
               :src="
-                parcel.img[0] ? `${parcel.img[0]}` : '/Feast_Hall_Preparations.png'
+                parcel.img[0]
+                  ? `${parcel.img[0]}`
+                  : '/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
               class="top-4 left-8 absolute z-0 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg -rotate-3 p-3"
             />
             <img
+              loading="lazy"
               :src="
-                parcel.img[1] ? `${parcel.img[1]}` : '/Feast_Hall_Preparations.png'
+                parcel.img[1]
+                  ? `${parcel.img[1]}`
+                  : '/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
-              class="-bottom-8 absolute z-10 w-1/2  h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg rotate-3 p-3"
+              class="-bottom-8 absolute z-10 w-1/2 h-48 sm:h-64 lg:h-auto lg:min-w-48 bg-white rounded-lg rotate-3 p-3"
             />
             <img
+              loading="lazy"
               :src="
-                parcel.img[2] ? `${parcel.img[2]}` : '/Feast_Hall_Preparations.png'
+                parcel.img[2]
+                  ? `${parcel.img[2]}`
+                  : '/Feast_Hall_Preparations.png'
               "
               height="800"
               style="filter: drop-shadow(0 2px 2px #000)"
@@ -459,8 +484,7 @@ function dragElement(elmnt) {
               ) +
               Math.max(
                 0,
-                $avatarPos.filter((x) => x.location === "Horse Heights")
-                  .length
+                $avatarPos.filter((x) => x.location === "Horse Heights").length
               )
             : "?"
         }}</span>
