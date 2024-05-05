@@ -158,7 +158,7 @@ function dragElement(elmnt) {
   >
     <a
       target="_blank"
-      href="https://boards.4chan.org/mlp/thread/41050548"
+      href="https://boards.4chan.org/mlp/thread/41056119"
       class="w-full flex flex-col items-center justify-center cursor-pointer hover:opacity-40 duration-300"
     >
       <div
